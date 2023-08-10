@@ -1,0 +1,29 @@
+.btn_white {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  background-color: white;
+  padding: 18px 50px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #141414;
+  border-radius: 20px;
+}
+
+.btn_green {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.68px;
+  background-color: rgba(120, 189, 148, 0.34);
+  padding: 18px 50px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+  border: none;
+  color: #141414;
+  border-radius: 20px;
+}/*# sourceMappingURL=template_btn.css.map */

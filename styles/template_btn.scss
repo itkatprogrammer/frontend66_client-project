@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+
+
+// Cтили для белой кнопки 
+.btn_white {
+    @include btn(white, 18px 50px);
+    color: $btnTextDark;
+    border-radius: 20px;
+}
+
+//Cтили для зеленой кнопки
+.btn_green {
+    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
+    color: $btnTextDark;
+    border-radius: 20px;
+}
