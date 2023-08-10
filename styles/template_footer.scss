@@ -10,13 +10,15 @@ footer {
     max-width: 1440px;
 }
 
-hr {
+.footer__line {
     max-width: 1180px;
+    margin-top: 100px;
 }
 
-.container__logo {
+.container-logo {
     display: flex;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .footer__logo {
@@ -33,9 +35,10 @@ hr {
     gap: 20px
 }
 
-.container__menu {
+.container-menu {
     display: flex;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .copyright {
@@ -47,6 +50,11 @@ hr {
     line-height: normal;
 }
 
+.footer__menu {
+    display: flex;
+    gap: 30px;
+}
+
 .footer__menu a {
     text-decoration: none;
     color: #000000;
@@ -55,4 +63,6 @@ hr {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    display: flex;
+    gap: 30px;
 }
