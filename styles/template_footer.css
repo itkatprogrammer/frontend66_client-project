@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.footer {
+footer {
   background-color: #F1F1F1;
   height: 302px;
   max-width: 1440px;
@@ -12,12 +12,13 @@
 
 .footer__line {
   max-width: 1180px;
-  margin: 50px auto;
+  margin-top: 100px;
 }
 
 .container-logo {
   display: flex;
   justify-content: space-between;
+  margin-top: 100px;
 }
 
 .footer__logo {
@@ -28,10 +29,16 @@
   font-weight: 700;
   line-height: 24px;
 }
+.footer__logo #footer-logo {
+  height: 45px;
+}
 
 .footer__icons {
   display: flex;
   gap: 20px;
+}
+.footer__icons #footer-icons {
+  height: 24px;
 }
 
 .container-menu {
@@ -64,6 +71,4 @@
   text-decoration: none;
   display: flex;
   gap: 30px;
-}
-
-/*# sourceMappingURL=template_footer.css.map */
+}/*# sourceMappingURL=template_footer.css.map */
