@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.big-logo__background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    max-height: fit-content;
+    padding: 0px 210px;
+    background-color: #A0D3B2;
+
+    #logo__image {
+        max-width: 90%;
+    }
+}
