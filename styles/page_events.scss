@@ -1,0 +1,434 @@
+@import "variables";
+@import "mixins";
+
+// мои миксины
+
+$mainFontHeader: 'Playfair Display', serif;
+$mainFontDescr: 'Source Serif 4', serif;
+
+$mainFontWeight: 600;
+$DescrFontWeight: 400;
+
+// Страница мероприятий
+
+.container_advt {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header__main {
+    font-family: $mainFontHeader;
+    font-size: 80px;
+    font-weight: $mainFontWeight;
+}
+
+.advt_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 80px;
+
+}
+
+.picture__advt {
+    display: block;
+    // width: 100%;
+    // height: 100%;
+}
+
+.descr {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.header__descr {
+    font-family: $mainFontHeader;
+    font-weight: $mainFontWeight;
+    font-size: 32px;
+
+    margin-top: 20px;
+}
+
+
+.date__event,
+.text__descr {
+    font-family: $mainFontDescr;
+    font-weight: $DescrFontWeight;
+    font-size: 20px;
+
+    margin-top: 2vw;
+}
+
+// Общая кнопка
+
+.btn_green {
+    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
+    color: $btnTextDark;
+    font-family: $mainFontDescr;
+    font-size: 20px;
+
+    border-radius: 20px;
+    margin: 20px;
+}
+
+// Общая кнопка(конец кода)
+
+.container-wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    font-family: $mainFontHeader;
+    font-weight: $mainFontWeight;
+    font-size: 32px;
+
+    margin-top: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+
+    margin-top: 40px;
+
+    // max-height: calc(75vh);
+    // overflow-x: hidden;
+    // overflow-y: auto;
+}
+
+.wrapper__col {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    border-bottom: 2px solid #000;
+}
+
+.wrapper__col:hover {
+    background-color: rgba(120, 189, 148, 0.34);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.picture__wrap {
+    z-index: -1;
+
+    // margin-bottom: 40px;
+}
+
+.pict-wpap {
+    width: 100%;
+    height: 100%;
+}
+
+.info__wrap {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 2vw 0.5vw;
+}
+
+.header__wrap {
+    font-family: $mainFontHeader;
+    font-weight: $mainFontWeight;
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.descr__wrap,
+.date__wrap {
+    font-family: $mainFontDescr;
+    font-weight: $DescrFontWeight;
+    font-size: 20px;
+
+    text-align: center;
+
+    margin-top: 1vw;
+}
+
+.btn__mobile {
+    display: none;
+}
+
+// Страница мероприятий(конец кода)
+
+// Adaptive
+@media screen and (max-width:1160px) {
+
+    .container_advt {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+
+    .header__main {
+        text-align: center;
+    }
+
+    .advt_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5vw;
+    }
+
+    .pict-wpap {
+        width: 100%;
+        height: 100%;
+    }
+
+    .descr {
+        align-items: center;
+        margin-top: 5vw;
+
+    }
+
+    .header__descr {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .header-wrapper {
+        margin-top: 5vw;
+        text-align: center;
+    }
+
+    .wrapper {
+        gap: 5vw;
+
+        max-height: calc(75vh);
+        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 5vw;
+    }
+
+    .wrapper__col {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        border-bottom: 2px solid #000;
+
+    }
+
+    @media screen and (max-width:900px) {
+
+        // Страница мероприятий
+        .container_advt {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header__main {
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .advt_row {
+            margin-top: 2.5vw;
+        }
+
+        .pict-wpap {
+            width: 100%;
+            height: 100%;
+        }
+
+        .descr {
+            margin-top: 2.5vw;
+        }
+
+        .container-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header-wrapper {
+            margin-top: 2.5vw;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5vw;
+
+            max-height: calc(100vh);
+            overflow-x: hidden;
+
+
+        }
+
+        .wrapper__col {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+
+            border-bottom: 2px solid #000;
+
+        }
+
+        .pict-wpap {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        // Страница мероприятий(конец кода)
+    }
+
+    @media screen and (max-width:768px) {
+        .container_advt {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .header__main {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        .advt_row {
+            margin-top: 1.5vw;
+        }
+
+        .descr {
+            margin-top: 1.5vw;
+            justify-content: center;
+        }
+
+        .header__descr {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .date__event,
+        .text__descr,
+        .btn {
+            font-size: 20px;
+            text-align: center;
+
+        }
+
+        .container-wrap {
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        .header-wrapper {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3vw;
+
+            max-height: calc(75vh);
+            overflow-x: hidden;
+            overflow-y: auto;
+
+        }
+
+        .wrapper__col {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .header__wrap,
+        .descr__wrap,
+        .date__wrap {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .btn__mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width:500px) {
+        .container_advt {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .header__main {
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .advt_row {
+            margin-top: 1vw;
+        }
+
+        .descr {
+            margin-top: 1vw;
+        }
+
+        .header__descr {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .date__event,
+        .text__descr,
+        .btn {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .container-wrap {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .header-wrapper {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2vw;
+
+            max-height: calc(75vh);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .header__wrap,
+        .descr__wrap,
+        .date__wrap {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn__mobile {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

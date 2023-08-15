@@ -1,0 +1,76 @@
+@import "variables";
+@import "mixins";
+
+// мои миксины
+
+$mainFontHeader: 'Playfair Display', serif;
+$mainFontDescr: 'Source Serif 4', serif;
+
+$mainFontWeight: 600;
+$DescrFontWeight: 400;
+
+
+
+.container_advt {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.header__main {
+    font-family: $mainFontHeader;
+    font-size: 32px;
+    font-weight: $mainFontWeight;
+
+    text-align: center;
+}
+
+.picture__main {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.pict-main {
+    width: 1000px;
+    height: 613px;
+}
+
+.container_wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    margin-top: 65px;
+}
+
+.btn_green {
+    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
+    color: $btnTextDark;
+    font-family: $mainFontDescr;
+    font-weight: $DescrFontWeight;
+    font-size: 24px;
+
+    border-radius: 20px;
+}
+
+.text__descr {
+    font-family: $mainFontDescr;
+    font-weight: $DescrFontWeight;
+    font-size: 24px;
+
+    margin-top: 30px;
+}
+
+.btn__descr {
+    margin-top: 25px;
+}
+
+.container_btn {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
