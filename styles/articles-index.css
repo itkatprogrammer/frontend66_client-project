@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.articles {
+  background-color: #161616;
+  color: #FFF;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.articles__border-box:not(:last-child) {
+  border-bottom: 1px solid #FFF;
+}
+
+.articles__border-box:last-child {
+  padding-bottom: 25px;
+}
+
+.articles__top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.articles__main-article {
+  display: flex;
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 60px;
+  min-width: 554px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+
+.articles__main-content {
+  max-width: 478px;
+}
+
+.articles__main-pic-box {
+  min-width: 363px;
+}
+
+.articles__main-pic {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.article__card-box {
+  max-width: 1440px;
+}
+
+.articles__card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 354px));
+  justify-content: space-between;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.articles__card {
+  padding: 47px 0px 5px 0px;
+  min-width: 354px;
+  transition: all 0.8s;
+}
+.articles__card:hover {
+  filter: opacity(55%);
+}
+
+.articles__card:not(:last-child) {
+  border-right: 1px solid #FFF;
+}
+
+.pic {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.articles__pic-box {
+  width: 295px;
+}
+
+.articles__h2 {
+  font-family: "Arsenal", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.articles__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.articles__text-p {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.article__card-title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.article__card-text-p {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #C2C2C2;
+}
+
+.article__link-continue {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin-top: 57px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+}/*# sourceMappingURL=articles-index.css.map */
