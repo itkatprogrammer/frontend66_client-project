@@ -51,7 +51,7 @@ $secondaryFontColor: #505050;
         color: $mainFontColor;
         font-size: 26px;
         font-weight: 700;
-        line-height: 120%;
+        line-height: 160%;
         letter-spacing: 0;
         align-items: center;
         justify-content: center;
@@ -164,6 +164,14 @@ $secondaryFontColor: #505050;
         font-style: italic;
         border-left: 4px solid #505050;
         padding-left: 10px;
+
+        @media (max-width: 480px) {
+            border-left: 2px solid #505050;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            border-left: 2px solid #505050;
+        }
     }
 }
 
