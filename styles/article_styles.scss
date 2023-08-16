@@ -40,6 +40,10 @@ $secondaryFontColor: #505050;
     align-items: center;
     padding-bottom: 20px;
 
+    a {
+        color: $secondaryFontColor;
+    }
+
     .article__main-title {
         display: flex;
         text-align: center;
@@ -55,8 +59,8 @@ $secondaryFontColor: #505050;
         padding-top: 15px;
 
         @media (max-width: 480px) {
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 500;
             line-height: 190%;
         }
     }

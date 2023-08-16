@@ -36,6 +36,9 @@
   align-items: center;
   padding-bottom: 20px;
 }
+.article__main-content a {
+  color: #505050;
+}
 .article__main-content .article__main-title {
   display: flex;
   text-align: center;
@@ -52,8 +55,8 @@
 }
 @media (max-width: 480px) {
   .article__main-content .article__main-title {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 500;
     line-height: 190%;
   }
 }
