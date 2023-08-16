@@ -14,7 +14,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
   max-width: 1180px;
   min-width: 300px;
   padding-top: 80px;
@@ -24,7 +23,7 @@
 
 .about__text-box {
   display: flex;
-  font-family: 'Arsenal';
+  font-family: "Arsenal";
 }
 
 .about__text {
@@ -32,17 +31,47 @@
   flex-direction: column;
   text-align: center;
 }
+@media (max-width: 480px) {
+  .about__text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 .about__card-list-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   max-width: 771px;
   gap: 20px;
 }
+@media (max-width: 480px) {
+  .about__card-list-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .about__card-list-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about__card-list-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
 
 .about__info-title {
   color: #FFF;
-  font-family: 'Arsenal';
+  font-family: "Arsenal";
   font-weight: 700;
   font-size: 18px;
 }
@@ -52,6 +81,21 @@
   flex-direction: column;
   min-width: 374px;
   border: 3px solid #009688;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .card-list-info__card {
+    min-width: 362.86px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card-list-info__card {
+    min-width: 534px;
+  }
+}
+@media (max-width: 480px) {
+  .card-list-info__card {
+    min-width: 200px;
+  }
 }
 
 .card-info__top {
@@ -69,16 +113,36 @@
   padding: 16px 42px;
   display: flex;
   align-items: flex-start;
-  font-family: 'Arsenal';
+  font-family: "Arsenal";
+}
+@media (max-width: 480px) {
+  .about__ul-list-info {
+    justify-content: center;
+    padding: 20px 43px;
+  }
 }
 
 .about__card-list-questions {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   max-width: 771px;
   grid-gap: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .about__card-list-questions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .about__card-list-questions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .about__card-list-questions {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .about__card-question {
@@ -92,12 +156,27 @@
 
 .about__question {
   padding: 102px 30px;
-  font-family: 'Arsenal';
+  font-family: "Arsenal";
 }
 
 .about__question-title {
   margin-top: 20px;
-  font-family: 'Arsenal';
+  font-family: "Arsenal";
   font-weight: 700;
   font-size: 30px;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .about__question-title {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .about__question-title {
+    text-align: center;
+  }
+}
+@media (max-width: 481px) {
+  .about__question-title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=about.css.map */
