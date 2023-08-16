@@ -8,6 +8,29 @@
   margin: 0 auto;
   padding: 100px 130px;
 }
+@media (max-width: 300px) {
+  .articles__main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__main {
+    padding: 50px 70px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__main {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__main {
+    padding: 30px 50px;
+  }
+}
 
 .articles__container {
   display: grid;
@@ -16,11 +39,36 @@
   margin: 0px auto;
   max-width: 100%;
 }
+@media (max-width: 300px) {
+  .articles__container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px auto;
+    max-width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 45px 65px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px 65px;
+  }
+}
 .articles__container .atricles__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 1px 0px 0px #C7C7C7;
+  border-bottom: 2px solid #C7C7C7;
 }
 .articles__container .atricles__card:hover {
   background-color: rgba(120, 189, 148, 0.3411764706);
@@ -35,6 +83,7 @@
 .articles__container .atricles__image #news-pic {
   max-width: 100%;
   max-height: 100%;
+  z-index: -1;
 }
 .articles__container .card-info {
   display: flex;
@@ -53,6 +102,16 @@
   text-align: center;
   padding-bottom: 15px;
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .articles__container .card-info .card-info__title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container .card-info .card-info__title {
+    font-size: 18px;
+  }
+}
 .articles__container .card-info .card-info__description {
   display: flex;
   flex-direction: column;
@@ -65,6 +124,16 @@
   line-height: 160%;
   letter-spacing: 0;
   padding-bottom: 20px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .articles__container .card-info .card-info__description {
+    font-size: 14px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container .card-info .card-info__description {
+    font-size: 14px;
+  }
 }
 
 a {
