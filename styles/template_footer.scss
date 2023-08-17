@@ -7,7 +7,6 @@
 footer {
     background-color: #F1F1F1;
     height: 302px;
-    max-width: 1440px;
 
     @media (min-width: 481px) and (max-width: 767px) {
         height: 550px;
@@ -20,7 +19,12 @@ footer {
 
 .footer__line {
     max-width: 1180px;
-    margin: 55px auto;
+    margin: 50px auto;
+}
+
+.footer-container {
+    max-width: 1180px;
+    margin: 0px auto;
 }
 
 .container-logo {
@@ -43,7 +47,7 @@ footer {
 
 .footer__logo {
     color: #000000;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -70,6 +74,13 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    align-items: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
@@ -86,16 +97,21 @@ footer {
 
 .copyright {
     color: #505050;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media (max-width: 300px) {
+        font-size: 14px;
+    }
 }
 
 .footer__menu {
     display: flex;
     gap: 30px;
+    align-items: center;
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
@@ -111,7 +127,7 @@ footer {
 .footer__menu a {
     text-decoration: none;
     color: #000000;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Roboto Slab', 'Times New Roman', serif;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
