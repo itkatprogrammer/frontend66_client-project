@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 *{
     padding: 0;
     margin: 0;
@@ -34,9 +37,16 @@
     } 
 }
 
+.articles__btn {
+    .btn_white {
+        @include btn (#FFF, 18px 50px);
+    }
+}
+
 .articles__main-article {
     display: flex;
     max-width: 1180px;
+    justify-content: center;
     margin: 0 auto;
     gap: 60px;
     min-width: 554px;
@@ -67,7 +77,6 @@
 }
 
 .articles__main-content {
-    max-width: 478px;
     @media (min-width: 992px) and (max-width: 1449px) {
         max-width: none;
     } 
@@ -182,7 +191,6 @@
         padding: 20px 60px 20px 60px;
         flex-direction: row;
         gap:20px;
-        align-items: stretch;
     }
     @media (min-width: 481px) and (max-width: 767px) {
         border: 1px solid white;

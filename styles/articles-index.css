@@ -38,9 +38,22 @@
   }
 }
 
+.articles__btn .btn_white {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #FFF;
+  padding: 18px 50px;
+  font-family: "Arsenal", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
 .articles__main-article {
   display: flex;
   max-width: 1180px;
+  justify-content: center;
   margin: 0 auto;
   gap: 60px;
   min-width: 554px;
