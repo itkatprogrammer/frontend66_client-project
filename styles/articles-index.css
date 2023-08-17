@@ -25,14 +25,12 @@
   max-width: 1180px;
   margin: 0 auto;
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__top-line {
     flex-direction: column;
     padding-bottom: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .articles__top-line {
     flex-direction: column;
@@ -49,7 +47,6 @@
   padding-top: 30px;
   padding-bottom: 35px;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__main-article {
     display: grid;
@@ -58,7 +55,6 @@
     padding-top: 20px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .articles__main-article {
     display: grid;
@@ -66,7 +62,6 @@
     max-width: none;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__main-article {
     flex-direction: column;
@@ -75,7 +70,6 @@
     gap: 15px;
   }
 }
-
 @media (max-width: 480px) {
   .articles__main-article {
     flex-direction: column;
@@ -87,26 +81,22 @@
 .articles__main-content {
   max-width: 478px;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__main-content {
     max-width: none;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .articles__main-content {
     max-width: none;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__main-content {
     max-width: none;
     text-align: center;
   }
 }
-
 @media (max-width: 480px) {
   .articles__main-content {
     text-align: center;
@@ -117,14 +107,12 @@
   max-width: 552px;
   min-width: 481px;
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__main-pic-box {
     max-width: 408px;
     min-width: auto;
   }
 }
-
 @media (max-width: 480px) {
   .articles__main-pic-box {
     max-width: 380px;
@@ -134,35 +122,32 @@
 
 .articles__main-pic {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .article__card-box {
   max-width: 1180px;
   margin: 0 auto;
 }
-
 @media (min-width: 992px) and (max-width: 1189px) {
   .article__card-box {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-
 @media (min-width: 1190px) and (max-width: 1449px) {
   .article__card-box {
     padding-top: 0px;
     padding-bottom: 0px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 992px) {
   .article__card-box {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .article__card-box {
     margin-top: 25px;
@@ -178,25 +163,21 @@
   max-width: 1180px;
   justify-items: normal;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__card-list {
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 }
-
 @media (min-width: 992px) and (max-width: 1189px) {
   .articles__card-list {
     gap: 20px;
   }
 }
-
 @media (min-width: 1190px) and (max-width: 1449px) {
   .articles__card-list {
     gap: 0px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .articles__card-list {
     grid-template-columns: repeat(auto-fit, minmax(662px, 1fr));
@@ -204,14 +185,12 @@
     gap: 20px;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__card-list {
     grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
     gap: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .articles__card-list {
     grid-template-columns: repeat(1, 1fr);
@@ -230,11 +209,9 @@
   padding-bottom: 60px;
   transition: all 0.8s;
 }
-
 .articles__card:hover {
   filter: opacity(55%);
 }
-
 @media (min-width: 992px) and (max-width: 1189px) {
   .articles__card {
     align-items: flex-start;
@@ -242,24 +219,20 @@
     padding: 20px 60px 20px 60px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .articles__card {
     border: 1px solid #FFF;
     padding: 20px 60px 20px 60px;
     flex-direction: row;
     gap: 20px;
-    align-items: stretch;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__card {
     border: 1px solid white;
     padding: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .articles__card {
     border: 1px solid white;
@@ -270,7 +243,6 @@
 .articles__card:not(:first-child) {
   border-left: 1px solid #FFF;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__card:not(:first-child) {
     border-left: 1px solid #FFF;
@@ -280,20 +252,17 @@
 .articles__card-description {
   max-width: 300px;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__card-description {
     max-width: 295px;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__card-description {
     text-align: center;
     max-width: none;
   }
 }
-
 @media (max-width: 480px) {
   .articles__card-description {
     text-align: center;
@@ -302,20 +271,19 @@
 
 .pic {
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .articles__pic-box {
   max-width: 295px;
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .articles__pic-box {
     width: 287px;
     height: 100%;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__pic-box {
     max-width: 254px;
@@ -323,7 +291,7 @@
 }
 
 .articles__h2 {
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 96px;
   font-style: normal;
   font-weight: 600;
@@ -331,7 +299,7 @@
 }
 
 .articles__title {
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -340,7 +308,7 @@
 }
 
 .articles__text-p {
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -348,7 +316,7 @@
 }
 
 .article__card-title {
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -356,7 +324,6 @@
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .article__card-title {
     min-width: 266px;
@@ -364,7 +331,7 @@
 }
 
 .article__card-text-p {
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -377,36 +344,32 @@
   justify-content: space-between;
   text-decoration: none;
   margin-top: 57px;
-  font-family: 'Arsenal', sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   color: #FFF;
 }
-
 @media (min-width: 992px) and (max-width: 1449px) {
   .article__link-continue {
     justify-content: flex-end;
     gap: 87px;
   }
 }
-
 @media (min-width: 768px) and (max-width: 991px) {
   .article__link-continue {
     justify-content: flex-end;
     gap: 20px;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .article__link-continue {
     display: none;
   }
 }
-
 @media (max-width: 481px) {
   .article__link-continue {
     display: none;
   }
-}
+}/*# sourceMappingURL=articles-index.css.map */
