@@ -16,4 +16,14 @@
 }
 .big-logo__background #logo__image {
   max-width: 90%;
+}
+@media (max-width: 480px) {
+  .big-logo__background #logo__image {
+    max-width: 300px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .big-logo__background #logo__image {
+    max-width: 500px;
+  }
 }/*# sourceMappingURL=template_big-logo+bg.css.map */
