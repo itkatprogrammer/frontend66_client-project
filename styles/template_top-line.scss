@@ -12,7 +12,7 @@ $secondaryFontColor: #505050;
 .body {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 100%;
 }
 
 .top-line__navigation {
@@ -23,10 +23,33 @@ $secondaryFontColor: #505050;
     align-items: center;
     box-shadow: 0px 1px 0px 0px #000;
 
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 50px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 60px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 25px 70px;
+    }
+
+
     .top-line__logo {
         #top-line-logo {
             height: 45px;
         }
+
+        @media (max-width: 480px) {
+            height: 15px;
+            padding-bottom: 55px;
+        }
+
     }
 
     .top-line__menu {
@@ -34,6 +57,23 @@ $secondaryFontColor: #505050;
         justify-content: center;
         align-items: center;
         gap: 50px;
+
+        @media (max-width: 480px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            flex-direction: row;
+            gap: 15px;
+        }
     }
 
     .menu_link {
@@ -56,6 +96,19 @@ $secondaryFontColor: #505050;
     text-align: center;
     box-shadow: 0px 1px 0px 0px #C7C7C7;
 
+    @media (max-width: 480px) {
+        padding: 20px 50px 20px 50px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 20px 60px 20px 60px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 30px 70px 30px 70px;
+    }
+
+
     .top-line__title-big {
         width: 100%;
         color: $secondaryFontColor;
@@ -65,6 +118,14 @@ $secondaryFontColor: #505050;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        @media (max-width: 480px) {
+            font-size: 65px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 80px;
+        }
     }
 
     .top-line__title-small {
@@ -76,6 +137,14 @@ $secondaryFontColor: #505050;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        @media (max-width: 480px) {
+            font-size: 25px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 34px;
+        }
     }
 }
 
@@ -87,6 +156,16 @@ $secondaryFontColor: #505050;
     padding: 30px 130px 30px 130px;
     box-shadow: 0px 1px 0px 0px #000;
 
+    @media (max-width: 480px) {
+        flex-direction: column;
+        padding: 20px 50px 20px 50px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: column;
+        padding: 20px 60px 20px 60px;
+    }
+
     .top-line__text {
         color: $mainFontColor;
         font-family: $mainFont;
@@ -94,6 +173,16 @@ $secondaryFontColor: #505050;
         font-style: normal;
         font-weight: 500;
         line-height: 18px;
+
+        @media (max-width: 480px) {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
     }
 
     .top-line__icons {
@@ -102,6 +191,10 @@ $secondaryFontColor: #505050;
 
         #top-icons {
             height: 24px;
+
+            @media (max-width: 480px) {
+                height: 20px;
+            }
         }
     }
 }
