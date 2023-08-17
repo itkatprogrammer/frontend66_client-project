@@ -38,7 +38,7 @@
   }
 }
 
-.articles__btn .btn_white {
+.link__articles-btn .btn_white {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -91,9 +91,6 @@
   }
 }
 
-.articles__main-content {
-  max-width: 478px;
-}
 @media (min-width: 992px) and (max-width: 1449px) {
   .articles__main-content {
     max-width: none;
