@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-$mainFont: 'Manrope', sans-serif;
-$secondaryFont: 'Playfair Display', serif;
+$mainFont: 'Work Sans', sans-serif;
+$secondaryFont: 'Roboto Slab', serif;
 $mainFontColor: #000000;
 $secondaryFontColor: #505050;
 
@@ -24,14 +24,14 @@ $secondaryFontColor: #505050;
     box-shadow: 0px 1px 0px 0px #000;
 
     @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        padding: 25px 50px;
+        flex-direction: row;
+        align-items: flex-start;
+
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: flex-start;
         padding: 25px 60px;
     }
 
@@ -60,13 +60,13 @@ $secondaryFontColor: #505050;
 
         @media (max-width: 480px) {
             flex-direction: column;
-            flex-wrap: wrap;
+            align-items: flex-end;
             gap: 10px;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
             flex-direction: column;
-            flex-wrap: wrap;
+            align-items: flex-end;
             gap: 10px;
         }
 
@@ -91,7 +91,7 @@ $secondaryFontColor: #505050;
 .top-line__title {
     display: flex;
     flex-direction: column;
-    padding: 50px 300px 50px 300px;
+    padding: 50px 100px 50px 100px;
     width: 100%;
     text-align: center;
     box-shadow: 0px 1px 0px 0px #C7C7C7;
@@ -105,7 +105,7 @@ $secondaryFontColor: #505050;
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-        padding: 30px 70px 30px 70px;
+        padding: 30px 55px 30px 55px;
     }
 
 
@@ -114,17 +114,17 @@ $secondaryFontColor: #505050;
         color: $secondaryFontColor;
         text-align: center;
         font-family: $secondaryFont;
-        font-size: 110px;
+        font-size: 100px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
 
         @media (max-width: 480px) {
-            font-size: 65px;
+            font-size: 60px;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
-            font-size: 80px;
+            font-size: 76px;
         }
     }
 
@@ -139,7 +139,7 @@ $secondaryFontColor: #505050;
         line-height: normal;
 
         @media (max-width: 480px) {
-            font-size: 25px;
+            font-size: 22px;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
