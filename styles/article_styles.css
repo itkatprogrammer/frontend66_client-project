@@ -208,4 +208,10 @@
   .btn_green {
     font-size: 3vh;
   }
+}
+
+.container-wrapper {
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
 }/*# sourceMappingURL=article_styles.css.map */

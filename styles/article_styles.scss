@@ -195,5 +195,10 @@ $secondaryFontColor: #505050;
     @media (min-width: 481px) and (max-width: 767px) {
         font-size: 3vh;
     }
+}
 
+.container-wrapper {
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
 }

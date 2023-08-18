@@ -154,4 +154,10 @@
 
 a {
   text-decoration: none;
+}
+
+.container-wrapper {
+  margin: 0 auto;
+  padding-left: 130px;
+  padding-right: 130px;
 }/*# sourceMappingURL=article.css.map */
