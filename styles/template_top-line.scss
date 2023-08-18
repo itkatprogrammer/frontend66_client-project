@@ -7,10 +7,7 @@
     box-sizing: border-box;
 }
 
-$mainFont: 'Work Sans', sans-serif;
-$secondaryFont: 'Roboto Slab', serif;
-$mainFontColor: #000000;
-$secondaryFontColor: #505050;
+
 
 .body {
     display: flex;
@@ -62,7 +59,6 @@ $secondaryFontColor: #505050;
         justify-content: center;
         align-items: center;
         gap: 50px;
-
         @media (max-width: 480px) {
             flex-direction: column;
             align-items: flex-end;
@@ -82,14 +78,9 @@ $secondaryFontColor: #505050;
     }
 
     .menu_link {
+        @include text-styles ($mainFont, 18px, 500, normal, 0);
         text-decoration: none;
-        color: $mainFontColor;
         text-align: center;
-        font-family: $mainFont;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
     }
 }
 
@@ -121,7 +112,6 @@ $secondaryFontColor: #505050;
 
     .top-line__title-big {
         width: 100%;
-        color: $secondaryFontColor;
         text-align: center;
         font-family: $secondaryFont;
         font-size: 100px;
@@ -141,7 +131,6 @@ $secondaryFontColor: #505050;
 
     .top-line__title-small {
         width: 100%;
-        color: $secondaryFontColor;
         text-align: center;
         font-family: $mainFont;
         font-size: 42px;
@@ -185,7 +174,7 @@ $secondaryFontColor: #505050;
     }
 
     .top-line__text {
-        color: $mainFontColor;
+        color: #000;
         font-family: $mainFont;
         font-size: 22px;
         font-style: normal;
@@ -215,4 +204,9 @@ $secondaryFontColor: #505050;
             }
         }
     }
+}
+
+a{
+    text-decoration: none;
+    color:#000;
 }

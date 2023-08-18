@@ -75,14 +75,13 @@
   }
 }
 .top-line__navigation .menu_link {
-  text-decoration: none;
-  color: #000000;
-  text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  text-align: center;
 }
 
 .top-line__title {
@@ -111,9 +110,8 @@
 }
 .top-line__title .top-line__title-big {
   width: 100%;
-  color: #505050;
   text-align: center;
-  font-family: "Roboto Slab", serif;
+  font-family: "Playfair Display", serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 600;
@@ -132,9 +130,8 @@
 }
 .top-line__title .top-line__title-small {
   width: 100%;
-  color: #505050;
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
@@ -183,8 +180,8 @@
   }
 }
 .top-line__social .top-line__text {
-  color: #000000;
-  font-family: "Work Sans", sans-serif;
+  color: #000;
+  font-family: "Arsenal", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -213,4 +210,9 @@
   .top-line__social .top-line__icons #top-icons {
     height: 20px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }/*# sourceMappingURL=template_top-line.css.map */
