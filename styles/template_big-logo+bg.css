@@ -14,16 +14,27 @@
   padding: 0px 210px;
   background-color: #A0D3B2;
 }
-.big-logo__background #logo__image {
-  max-width: 90%;
-}
 @media (max-width: 480px) {
-  .big-logo__background #logo__image {
-    max-width: 300px;
+  .big-logo__background {
+    max-width: 100%;
+    padding: 0px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
-  .big-logo__background #logo__image {
-    max-width: 500px;
+  .big-logo__background {
+    max-width: 100%;
+    padding: 0px 60px;
   }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .big-logo__background {
+    max-width: 100%;
+    padding: 0px 100px;
+  }
+}
+.big-logo__background #logo__image {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=template_big-logo+bg.css.map */
