@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
-    <link rel="stylesheet" href="styles/events.css">
-    <link rel="stylesheet" href="styles/template_btn.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/template_container-wrapper.css">
+    <link rel="stylesheet" href="styles/events.css" />
+    <link rel="stylesheet" href="styles/template_btn.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/template_container-wrapper.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="container-wrapper">
-        <div class="events">
-            <div class="events-container">
-                <div class="events__title">Мероприятия</div>
-                <form action="page_events.html">
-                    <button class="btn btn_green" type="submit">Смотреть все</button>
-                </form>
-            </div>
-            <a href="individual-event1.html" class="events__first">
-                <img src="img/events_img1.png" alt="poster1" class="event__img">
-                <div class="event-container">
-                    <div class="event">Онлайн конференция "Веганская интерсекциональность"</div>
-                    <div class="event__data">07 - 08 октября 2023 г.</div>
-                    <div class="event__description">Проводится Международной ассоциацией социологинь-веганок.</div>
-                </div>
-            </a>
-            <a href="individ-event2.html" class="events__second">
-                <img src="img/events_img2.png" alt="poster2" class="event__img" id="event-img1">
-                <div class="event-container">
-                    <div class="event">7-я конференция Европейской ассоциации Критических исследований животных
-                        (EACAS)
-                    </div>
-                    <div class="event__data">24 - 25 июня 2021 г.</div>
-                    <div class="event__description">Kультурные исследования, гендерные и женские исследования,
-                        критические расовые
-                        исследования
-                        и др.</div>
-                </div>
-                <img src="img/events_img2.png" alt="poster2" class="event__img" id="event-img2">
-            </a>
+      <div class="events">
+        <div class="events-container">
+          <div class="events__title">Мероприятия</div>
+          <form action="page_events.html">
+            <button class="btn btn_green" type="submit">Смотреть все</button>
+          </form>
         </div>
-        <a href="individ-event8.html" class="events__third">
-            <img src="img/events_img3.png" alt="poster3" class="event__img">
-            <div class="event-container">
-                <div class="event">Postgraduate Animal Studies Symposium: Впечатления</div>
-                <div class="event__data">24 - 25 мая 2021 г.</div>
-                <div class="event__description">Выступление исследовательниц со своими научными работами,
-                    посвященными
-                    животным.</div>
+        <a href="individual-event1.html" class="events__first">
+          <img
+            src="img/events_img1.png"
+            alt="poster1"
+            class="event__img event__img_shadow-left"
+          />
+          <div class="event-container">
+            <div class="event">
+              Онлайн конференция "Веганская интерсекциональность"
             </div>
+            <div class="event__data">07 - 08 октября 2023 г.</div>
+            <div class="event__description">
+              Проводится Международной ассоциацией социологинь-веганок.
+            </div>
+          </div>
         </a>
+        <a href="individ-event2.html" class="events__second">
+          <img
+            src="img/events_img2.png"
+            alt="poster2"
+            class="event__img event__img_shadow-right"
+            id="event-img1"
+          />
+          <div class="event-container">
+            <div class="event">
+              7-я конференция Европейской ассоциации Критических исследований
+              животных (EACAS)
+            </div>
+            <div class="event__data">24 - 25 июня 2021 г.</div>
+            <div class="event__description">
+              Kультурные исследования, гендерные и женские исследования,
+              критические расовые исследования и др.
+            </div>
+          </div>
+          <img
+            src="img/events_img2.png"
+            alt="poster2"
+            class="event__img event__img_shadow-right"
+            id="event-img2"
+          />
+        </a>
+      </div>
+      <a href="individ-event8.html" class="events__third">
+        <img
+          src="img/events_img3.png"
+          alt="poster3"
+          class="event__img event__img_shadow-left"
+        />
+        <div class="event-container">
+          <div class="event">
+            Postgraduate Animal Studies Symposium: Впечатления
+          </div>
+          <div class="event__data">24 - 25 мая 2021 г.</div>
+          <div class="event__description">
+            Выступление исследовательниц со своими научными работами,
+            посвященными животным.
+          </div>
+        </div>
+      </a>
     </div>
-</body>
-
+  </body>
 </html>

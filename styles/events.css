@@ -4,11 +4,20 @@
   box-sizing: border-box;
 }
 
+.events__wrapper {
+  background-color: #ebebeb;
+  padding-bottom: 10px;
+}
+
+.events {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 .events-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 130px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .events-container {
@@ -40,12 +49,12 @@
 }
 
 .events__title {
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 96px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
+  letter-spacing: 0;
+  color: #000;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .events__title {
@@ -90,6 +99,7 @@
   .events__third {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 }
 @media (max-width: 480px) {
@@ -98,6 +108,7 @@
   .events__third {
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
   }
 }
 @media (max-width: 300px) {
@@ -112,6 +123,11 @@
 
 .events__third {
   margin-bottom: 150px;
+  margin-top: 100px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
 }
 
 .events__first:hover,
@@ -123,49 +139,159 @@
 .event-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
+  max-width: 640px;
+  min-width: 409px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
 }
 
 .event {
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
+  letter-spacing: 0;
+  color: #2D2D2D;
   margin-top: 50px;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .event {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 300px) {
   .event {
     font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
-.event__data,
-.event__description {
-  color: #091810;
-  font-family: Inter;
+.event__data {
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  margin-bottom: 50px;
-  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #505050;
 }
 
+.event__description {
+  font-family: "Arsenal", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #505050;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+
+.event__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 480px;
+}
 @media (max-width: 480px) {
   .event__img {
-    width: 300px;
+    min-width: 300px;
   }
 }
 @media (max-width: 300px) {
   .event__img {
-    width: 250px;
+    min-width: 220px;
   }
+}
+
+.event__img_shadow-right {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event__img_shadow-left {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 #event-img1 {
