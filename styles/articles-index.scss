@@ -11,15 +11,14 @@
     background-color:#161616;
     color: #FFF;
     margin: 0 auto;
+    .articles__border-box:not(:last-child) {
+        border-bottom: 1px solid #FFF;
+    }
+    .articles__border-box:last-child {
+        padding-bottom: 25px;
+    }
 }
 
-.articles__border-box:not(:last-child) {
-    border-bottom: 1px solid #FFF;
-}
-
-.articles__border-box:last-child {
-    padding-bottom: 25px;
-}
 
 .articles__top-line {
     display: flex;
@@ -37,6 +36,15 @@
     } 
 }
 
+.articles__title {
+    @include text-styles ($mainFont, 36px, 600, normal, 0px);
+    margin-bottom: 20px;
+}
+
+.articles__h2 {
+    @include text-styles ($mainFont, 96px, 600, normal, 0px);
+}
+
 .link__articles-btn {
     .btn_white {
         @include btn (#FFF, 18px 50px);
@@ -45,113 +53,92 @@
 
 .articles__main-article {
     display: flex;
-    max-width: 1180px;
     justify-content: center;
+    min-width: 554px;
+    max-width: 1180px;
     margin: 0 auto;
     gap: 60px;
-    min-width: 554px;
-    padding-top: 30px;
-    padding-bottom: 35px;
+    padding: 30px 0px 35px 0px;
     @media (min-width: 992px) and (max-width: 1449px) {
         display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(479px, 1fr));
-    gap:20px;
-    padding-top: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(479px, 1fr));
+        gap:20px;
+        padding-top: 20px;
     }   
     @media (min-width: 768px) and (max-width: 991px) {
         display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(434px, 1fr));
-    max-width: none;
+        grid-template-columns: repeat(auto-fit, minmax(434px, 1fr));
+        max-width: none;
     }  
     @media (min-width: 481px) and (max-width: 767px) {
         flex-direction: column;
-        min-width: auto;
         align-items: center;
+        min-width: auto;
         gap: 15px;
     }  
     @media (max-width: 480px) {
         flex-direction: column;
-        min-width: auto;
         align-items: center;
+        min-width: auto;
     }
 }
 
-.articles__main-content {
-    @media (min-width: 992px) and (max-width: 1449px) {
-        max-width: none;
-    } 
-    @media (min-width: 768px) and (max-width: 991px) {
-        max-width: none;
-    }    
+.articles__main-pic-box{
+    min-width: 481px;
+    max-width: 552px;
     @media (min-width: 481px) and (max-width: 767px) {
-        max-width: none;
+        min-width: auto;
+        max-width: 408px;
+    }   
+    @media (max-width: 480px) {
+        min-width: 219px;
+        max-width: 380px;
+    }
+    .articles__main-pic {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+    
+.articles__main-content {  
+    @media (min-width: 481px) and (max-width: 767px) {
         text-align: center;
     } 
     @media (max-width: 480px) {
         text-align: center; 
-    } 
-
-           
-}
-
-
-.articles__main-pic-box{
-    max-width: 552px;
-    min-width: 481px;
-    @media (min-width: 481px) and (max-width: 767px) {
-        max-width: 408px;
-        min-width: auto;
-    }   
-    @media (max-width: 480px) {
-        max-width: 380px;
-        min-width: 219px;
-    }  
-}
-
-.articles__main-pic {
-    width: 100%;
-    object-fit: cover;
+    }            
 }
 
 .article__card-box {
     max-width: 1180px;
     margin: 0 auto;
     @media (min-width: 992px) and (max-width: 1189px) {
-        padding-top: 20px;
-        padding-bottom: 20px; 
+        padding:20px 0px 20px 0px;
     }
-    @media (min-width: 1190px) and (max-width: 1449px) {
-        padding-top: 0px;
-        padding-bottom: 0px;    
-    } 
     @media (min-width: 768px) and (max-width: 992px) {
-        padding-top: 20px;
-        padding-bottom: 20px;  
+        padding:20px 0px 20px 0px;
     } 
     @media (min-width: 481px) and (max-width: 767px) {
-        margin-top: 25px;
-        margin-bottom: 25px; 
-    } 
-    
+        padding:25px 0px 25px 0px;
+    }    
 }
-
 
 .articles__card-list {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-    max-width: 1180px;
     justify-items: normal;
+    max-width: 1180px;
+    grid-template-columns: repeat(3, 1fr);
     @media (min-width: 992px) and (max-width: 1449px) {
         grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); 
-    }   
-    @media (min-width: 992px) and (max-width: 1189px) {
-        gap: 20px;  
-    }
-    @media (min-width: 1190px) and (max-width: 1449px) {
-          gap: 0px; 
     } 
+    @media (min-width: 1190px) and (max-width: 1449px) {
+        gap: 0px; 
+    }
+    @media (min-width: 992px) and (max-width: 1189px) {
+        gap: 20px;
+    }
     @media (min-width: 768px) and (max-width: 991px) {
         grid-template-columns: repeat(auto-fit, minmax(662px, 1fr));
         align-items: center;
@@ -165,11 +152,9 @@
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
         gap: 10px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 0px 20px 0px;
     }       
 }
-
 
 .articles__card {
     display: flex;
@@ -183,9 +168,9 @@
         padding: 20px 60px 20px 60px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
+        align-items: flex-start;
         border: 1px solid #FFF;
         padding: 20px 60px 20px 60px;
-        flex-direction: row;
         gap:20px;
     }
     @media (min-width: 481px) and (max-width: 767px) {
@@ -219,14 +204,7 @@
     }   
   }
 
-  
-
-.pic {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.articles__pic-box {
+ .articles__pic-box {
     max-width: 295px;
     @media (min-width: 768px) and (max-width: 991px) {
         width: 287px;
@@ -234,69 +212,38 @@
     } 
     @media (min-width: 481px) and (max-width: 767px) {
         max-width: 254px;
-    } 
-    
-}
+        margin: 0 auto;
+    }   
+} 
 
-
-.articles__h2 {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.articles__title {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal; 
-    margin-bottom: 20px;
+.articles__pic {
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .articles__text-p {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
+    @include text-styles ($mainFont, 20px, 400, 30px, 0px);
 }
 
 .article__card-title {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    @include text-styles ($mainFont, 24px, 600, normal, 0px);
+    margin: 10px 0px 15px 0px;
     @media (min-width: 481px) and (max-width: 767px) {
         min-width: 266px;
     } 
-    
 }
 
 .article__card-text-p {
-    font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    @include text-styles ($mainFont, 20px, 400, normal, 0px);
     color: #C2C2C2;
 }
 
 .article__link-continue {
+    @include text-styles ($mainFont, 20px, 500, normal, 0px);
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     margin-top: 57px;
-    font-family: 'Arsenal', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     color: #FFF;
     @media (min-width: 992px) and (max-width: 1449px) {
         justify-content: flex-end;
@@ -319,13 +266,28 @@
     color: #FFF;
 }
 
+.articles__link-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles__link-individual-art {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:20px;
+    } 
+}
+
 .articles__main-article:hover {
     background-color: rgba(120, 189, 148, 0.34);
     .articles__main-pic-box {
         opacity: 0.8;
     }
 }
-
 
 .articles__card:hover {
     background-color: rgba(120, 189, 148, 0.34);
