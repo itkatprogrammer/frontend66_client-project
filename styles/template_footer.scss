@@ -1,3 +1,7 @@
+@import "variables";
+@import "mixins";
+
+
 * {
     margin: 0;
     padding: 0;
@@ -46,12 +50,8 @@ footer {
 }
 
 .footer__logo {
+    @include text-styles ($mainFont, 24px, 600, 24px, 0);
     color: #000000;
-    font-family: 'Roboto Slab', 'Times New Roman', serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -97,13 +97,8 @@ footer {
 }
 
 .copyright {
+    @include text-styles ($mainFont, 18px, 400, normal, 0);
     color: #505050;
-    font-family: 'Roboto Slab', 'Times New Roman', serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
     @media (max-width: 300px) {
         font-size: 14px;
     }
@@ -126,13 +121,9 @@ footer {
 }
 
 .footer__menu a {
+    @include text-styles ($mainFont, 18px, 400, normal, 0);
     text-decoration: none;
     color: #000000;
-    font-family: 'Roboto Slab', 'Times New Roman', serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
     display: flex;
     gap: 30px;
 }
