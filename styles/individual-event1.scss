@@ -1,32 +1,17 @@
 @import "variables";
 @import "mixins";
 
-// мои миксины
-
-$mainFontHeader: 'Playfair Display', serif;
-$mainFontDescr: 'Source Serif 4', serif;
-
-$mainFontWeight: 600;
-$DescrFontWeight: 400;
-
-
-
-.container_advt {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.header__main {
-    font-family: $mainFontHeader;
-    font-size: 32px;
-    font-weight: $mainFontWeight;
-
+.wrap_event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
 .picture__main {
     display: flex;
     justify-content: center;
+    width: 100%;
 
     margin-top: 40px;
 }
@@ -36,38 +21,41 @@ $DescrFontWeight: 400;
     height: 60vw;
 }
 
-.container_wrapper {
-    max-width: 1180px;
-    margin: 0 auto;
-
-    margin-top: 65px;
-}
-
 .btn_green,
 .btn .btn_green {
     width: 100%;
 }
 
-.btn_green {
+.btn__descr .btn_green {
     @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
     color: $btnTextDark;
-    font-family: $mainFontDescr;
-    font-weight: $DescrFontWeight;
-    font-size: 24px;
+    font-size: 20px;
 
     border-radius: 20px;
+    text-align: center;
 }
 
 .text__descr {
-    font-family: $mainFontDescr;
-    font-weight: $DescrFontWeight;
-    font-size: 24px;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 
-    margin-top: 30px;
+    margin-top: 5vw;
 }
 
 .btn__descr {
     margin-top: 25px;
+}
+
+.btn__descr .btn_green {
+    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
+    color: $btnTextDark;
+    font-size: 20px;
+
+    border-radius: 20px;
+    text-align: center;
 }
 
 .container_btn {
@@ -80,16 +68,19 @@ $DescrFontWeight: 400;
     margin-top: 50px;
 }
 
+.container_btn .btn_green {
+    @include btn(rgba(120, 189, 148, 0.34), 15px 50px);
+    color: $btnTextDark;
+    font-size: 20px;
+
+    border-radius: 20px;
+    text-align: center;
+}
+
 // Страница мероприятий(конец кода)
 
 // Adaptive
-@media screen and (max-width:1450px) {
-    .container_advt {
-        max-width: 1450px;
-        margin: 0 auto;
-    }
 
-}
 
 @media screen and (max-width:992px) {
     .container_advt {
@@ -98,9 +89,6 @@ $DescrFontWeight: 400;
         padding: 0 auto;
     }
 
-    .header__main {
-        font-size: 100%;
-    }
 
     .picture__main {
         max-width: 992px;
@@ -125,8 +113,6 @@ $DescrFontWeight: 400;
 
     .btn__descr,
     .btn_green {
-        width: 100%;
-        font-size: 100%;
 
         margin: 2vw auto;
     }
