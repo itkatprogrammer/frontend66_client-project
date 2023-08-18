@@ -109,12 +109,12 @@
 .articles__container .card-info .card-info__title {
   display: flex;
   flex-direction: column;
-  color: #000000;
-  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+  font-family: "Arsenal", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0;
+  letter-spacing: 1;
   text-align: center;
   padding-bottom: 15px;
 }
@@ -134,21 +134,21 @@
   color: #505050;
   padding-top: 8px;
   text-align: center;
-  font-family: "Manrope", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 160%;
-  letter-spacing: 0;
+  letter-spacing: 2;
   padding-bottom: 20px;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   .articles__container .card-info .card-info__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__container .card-info .card-info__description {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
