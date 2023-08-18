@@ -20,15 +20,14 @@
 }
 @media (max-width: 480px) {
   .top-line__navigation {
-    display: flex;
-    flex-direction: column;
-    padding: 25px 50px;
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__navigation {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
     padding: 25px 60px;
   }
 }
@@ -55,14 +54,14 @@
 @media (max-width: 480px) {
   .top-line__navigation .top-line__menu {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: flex-end;
     gap: 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__navigation .top-line__menu {
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: flex-end;
     gap: 10px;
   }
 }
@@ -76,7 +75,7 @@
   text-decoration: none;
   color: #000000;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -86,7 +85,7 @@
 .top-line__title {
   display: flex;
   flex-direction: column;
-  padding: 50px 300px 50px 300px;
+  padding: 50px 100px 50px 100px;
   width: 100%;
   text-align: center;
   box-shadow: 0px 1px 0px 0px #C7C7C7;
@@ -103,34 +102,34 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .top-line__title {
-    padding: 30px 70px 30px 70px;
+    padding: 30px 55px 30px 55px;
   }
 }
 .top-line__title .top-line__title-big {
   width: 100%;
   color: #505050;
   text-align: center;
-  font-family: "Playfair Display", serif;
-  font-size: 110px;
+  font-family: "Roboto Slab", serif;
+  font-size: 100px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 @media (max-width: 480px) {
   .top-line__title .top-line__title-big {
-    font-size: 65px;
+    font-size: 60px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__title .top-line__title-big {
-    font-size: 80px;
+    font-size: 76px;
   }
 }
 .top-line__title .top-line__title-small {
   width: 100%;
   color: #505050;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 42px;
   font-style: normal;
   font-weight: 400;
@@ -138,7 +137,7 @@
 }
 @media (max-width: 480px) {
   .top-line__title .top-line__title-small {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -169,7 +168,7 @@
 }
 .top-line__social .top-line__text {
   color: #000000;
-  font-family: "Manrope", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
