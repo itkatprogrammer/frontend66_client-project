@@ -41,12 +41,12 @@
 .article__main-content .article__main-title {
   display: flex;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  color: #000000;
+  font-family: "Arsenal", sans-serif;
+  color: #2d2d2d;
   font-size: 26px;
   font-weight: 700;
   line-height: 160%;
-  letter-spacing: 0;
+  letter-spacing: 1;
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
@@ -62,12 +62,12 @@
 .article__main-content .article__small-title {
   display: flex;
   text-align: center;
-  font-family: "Roboto Slab", serif;
-  color: #000000;
+  font-family: "Arsenal", sans-serif;
+  color: #2d2d2d;
   font-size: 20px;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0;
+  letter-spacing: 1;
   align-items: center;
   justify-content: center;
   padding-bottom: 15px;
@@ -85,11 +85,11 @@
 .article__main-content ol,
 .article__main-content div {
   text-align: justify;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 160%;
-  letter-spacing: 0;
+  letter-spacing: 2;
   color: #505050;
   gap: 10px;
 }
@@ -98,7 +98,7 @@
   .article__main-content ul,
   .article__main-content ol,
   .article__main-content div {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Arsenal", sans-serif;
     font-size: 2vh;
     line-height: 100%;
     letter-spacing: 0;
@@ -111,7 +111,7 @@
   .article__main-content ul,
   .article__main-content ol,
   .article__main-content div {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Arsenal", sans-serif;
     font-size: 3vh;
     line-height: 100%;
     letter-spacing: 0;
@@ -150,7 +150,7 @@
      object-fit: cover;
 }
 .article__main-content .articles-image .articles-image-title {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Arsenal", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
@@ -167,18 +167,21 @@
 }
 .article__main-content .articles__special-p {
   display: flex;
+  font-size: 24px;
   font-style: italic;
   border-left: 4px solid #505050;
   padding-left: 10px;
 }
 @media (max-width: 480px) {
   .article__main-content .articles__special-p {
+    font-size: 16px;
     border-left: 2px solid #505050;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .article__main-content .articles__special-p {
     border-left: 2px solid #505050;
+    font-size: 22px;
   }
 }
 
@@ -192,7 +195,7 @@
   font-family: "Arsenal", sans-serif;
   cursor: pointer;
   border: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Arsenal", sans-serif;
   color: #505050;
   border-radius: 20px;
 }
