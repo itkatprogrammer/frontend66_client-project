@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-line__title-index {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .top-line__title-index {
+    display: none;
+  }
+}
+@media (min-width: 1449px) {
+  .top-line__title-index {
+    display: none;
+  }
+}
+
 .articles {
   background-color: #161616;
   color: #FFF;
