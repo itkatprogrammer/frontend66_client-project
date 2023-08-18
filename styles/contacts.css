@@ -12,6 +12,9 @@
   font-weight: 600;
   line-height: normal;
   text-align: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .contacts__title {
@@ -109,4 +112,10 @@ a {
   font-weight: 600;
   line-height: normal;
   text-align: center;
+  margin-bottom: 100px;
+}
+@media (max-width: 480px) {
+  .mail {
+    font-size: 17px;
+  }
 }/*# sourceMappingURL=contacts.css.map */
