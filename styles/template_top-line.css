@@ -13,27 +13,30 @@
 .top-line__navigation {
   display: flex;
   flex-direction: row;
-  padding: 25px 80px;
+  padding: 9px 80px;
   justify-content: space-between;
   align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
   box-shadow: 0px 1px 0px 0px #000;
 }
 @media (max-width: 480px) {
   .top-line__navigation {
     flex-direction: row;
     align-items: flex-start;
+    padding: 9px 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__navigation {
     flex-direction: row;
     align-items: flex-start;
-    padding: 25px 60px;
+    padding: 9px 60px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .top-line__navigation {
-    padding: 25px 70px;
+    padding: 9px 70px;
   }
 }
 .top-line__navigation .top-line__logo #top-line-logo {
@@ -85,24 +88,25 @@
 .top-line__title {
   display: flex;
   flex-direction: column;
-  padding: 50px 100px 50px 100px;
+  padding: 10px 100px 10px 100px;
   width: 100%;
+  background-color: #A0D3B2;
   text-align: center;
   box-shadow: 0px 1px 0px 0px #C7C7C7;
 }
 @media (max-width: 480px) {
   .top-line__title {
-    padding: 20px 50px 20px 50px;
+    padding: 25px 10px 25px 10px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__title {
-    padding: 20px 60px 20px 60px;
+    padding: 20px 25px 20px 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .top-line__title {
-    padding: 30px 55px 30px 55px;
+    padding: 10px 55px 10px 55px;
   }
 }
 .top-line__title .top-line__title-big {
@@ -114,6 +118,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  color: #2D2D2D;
 }
 @media (max-width: 480px) {
   .top-line__title .top-line__title-big {
@@ -134,6 +139,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #505050;
 }
 @media (max-width: 480px) {
   .top-line__title .top-line__title-small {
@@ -151,19 +157,29 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 130px 30px 130px;
+  padding: 15px 130px 15px 130px;
   box-shadow: 0px 1px 0px 0px #000;
 }
 @media (max-width: 480px) {
   .top-line__social {
     flex-direction: column;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 20px 20px 20px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__social {
     flex-direction: column;
     padding: 20px 60px 20px 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .top-line__social {
+    padding: 20px 70px 20px 70px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .top-line__social {
+    padding: 20px 80px 20px 80px;
   }
 }
 .top-line__social .top-line__text {

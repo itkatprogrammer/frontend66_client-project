@@ -11,19 +11,18 @@
   max-width: 100%;
   max-height: -moz-fit-content;
   max-height: fit-content;
+  height: 74vh;
   padding: 0px 210px;
   background-color: #A0D3B2;
 }
 @media (max-width: 480px) {
   .big-logo__background {
-    max-width: 100%;
-    padding: 0px;
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .big-logo__background {
-    max-width: 100%;
-    padding: 0px 60px;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -37,4 +36,10 @@
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: auto;
+}
+
+.big-logo__image {
+  max-height: 397px;
+  margin: auto;
 }/*# sourceMappingURL=template_big-logo+bg.css.map */
