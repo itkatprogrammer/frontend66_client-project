@@ -6,9 +6,8 @@
 
 @import 'variables';
 @import 'mixins';
-$mainFont: 'Work Sans', sans-serif;
-$secondaryFont: 'Roboto Slab', serif;
-$mainFontColor: #000000;
+$mainFont: 'Arsenal', sans-serif;
+$mainFontColor: #2d2d2d;
 $secondaryFontColor: #505050;
 
 .article__container {
@@ -47,12 +46,12 @@ $secondaryFontColor: #505050;
     .article__main-title {
         display: flex;
         text-align: center;
-        font-family: $secondaryFont;
+        font-family: $mainFont;
         color: $mainFontColor;
         font-size: 26px;
         font-weight: 700;
         line-height: 160%;
-        letter-spacing: 0;
+        letter-spacing: 1;
         align-items: center;
         justify-content: center;
         padding-bottom: 15px;
@@ -68,12 +67,12 @@ $secondaryFontColor: #505050;
     .article__small-title {
         display: flex;
         text-align: center;
-        font-family: $secondaryFont;
+        font-family: $mainFont;
         color: $mainFontColor;
         font-size: 20px;
         font-weight: 700;
         line-height: 120%;
-        letter-spacing: 0;
+        letter-spacing: 1;
         align-items: center;
         justify-content: center;
         padding-bottom: 15px;
@@ -93,9 +92,9 @@ $secondaryFontColor: #505050;
         text-align: justify;
         font-family: $mainFont;
         font-size: 22px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 160%;
-        letter-spacing: 0;
+        letter-spacing: 2;
         color: $secondaryFontColor;
         gap: 10px;
 
@@ -164,16 +163,19 @@ $secondaryFontColor: #505050;
 
     .articles__special-p {
         display: flex;
+        font-size: 24px;
         font-style: italic;
         border-left: 4px solid #505050;
         padding-left: 10px;
 
         @media (max-width: 480px) {
+            font-size: 16px;
             border-left: 2px solid #505050;
         }
 
         @media (min-width: 481px) and (max-width: 767px) {
             border-left: 2px solid #505050;
+            font-size: 22px;
         }
     }
 }
