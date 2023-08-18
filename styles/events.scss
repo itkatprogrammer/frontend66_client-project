@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
-
 .events-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 130px;
 
     @media (min-width: 768px) and (max-width: 991px) {
@@ -93,6 +93,12 @@
 
 .events__third {
     margin-bottom: 150px;
+}
+
+.events__first:hover,
+.events__second:hover,
+.events__third:hover {
+    background-color: rgba(120, 189, 148, 0.34);
 }
 
 .event-container {
