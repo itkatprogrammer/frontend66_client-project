@@ -1,25 +1,14 @@
 @import "variables";
 @import "mixins";
 
-// мои миксины
-
-$mainFontHeader: 'Playfair Display', serif;
-$mainFontDescr: 'Source Serif 4', serif;
-
-$mainFontWeight: 600;
-$DescrFontWeight: 400;
-
-// Страница мероприятий
-
-.container_advt {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
 .header__main {
-    font-family: $mainFontHeader;
-    font-size: 80px;
-    font-weight: $mainFontWeight;
+    font-family: $mainFont;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    margin: 10vw 0;
 }
 
 .advt_row {
@@ -43,12 +32,15 @@ $DescrFontWeight: 400;
 
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+    margin: 0 2vw;
 }
 
 .header__descr {
-    font-family: $mainFontHeader;
-    font-weight: $mainFontWeight;
-    font-size: 32px;
+    font-family: $mainFont;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
     margin-top: 20px;
 }
@@ -56,51 +48,48 @@ $DescrFontWeight: 400;
 
 .date__event,
 .text__descr {
-    font-family: $mainFontDescr;
-    font-weight: $DescrFontWeight;
+    font-family: $mainFont;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 
     margin-top: 2vw;
 }
 
 // Общая кнопка
 
-.btn_green {
-    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
-    color: $btnTextDark;
-    font-family: $mainFontDescr;
-    font-size: 20px;
-
-    border-radius: 20px;
+.btn,
+.btn__mobile {
+    margin: 2vw 0;
 
 }
 
-.btn_green,
 .btn .btn_green {
-    width: 100%;
+    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
+    color: $btnTextDark;
+    font-size: 20px;
+
+    border-radius: 20px;
+    text-align: center;
 }
 
 // Общая кнопка(конец кода)
 
-.container-wrap {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
 .header-wrapper {
-    font-family: $mainFontHeader;
-    font-weight: $mainFontWeight;
-    font-size: 32px;
+    font-family: $mainFont;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
-    margin-top: 40px;
+    margin: 5vw 0;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5vw;
-
-    margin-top: 40px;
 
     // max-height: calc(75vh);
     // overflow-x: hidden;
@@ -115,6 +104,7 @@ $DescrFontWeight: 400;
     justify-content: flex-start;
 
     border-bottom: 2px solid #000;
+    margin-bottom: 50px;
 }
 
 .wrapper__col:hover {
@@ -141,19 +131,25 @@ $DescrFontWeight: 400;
     margin: 2vw 0.5vw;
 }
 
+
+
 .header__wrap {
-    font-family: $mainFontHeader;
-    font-weight: $mainFontWeight;
+    font-family: $mainFont;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 
     text-align: center;
 }
 
 .descr__wrap,
 .date__wrap {
-    font-family: $mainFontDescr;
-    font-weight: $DescrFontWeight;
+    font-family: $mainFont;
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 
     text-align: center;
 
@@ -164,23 +160,26 @@ $DescrFontWeight: 400;
     display: none;
 }
 
-// Страница мероприятий(конец кода)
-
-// footer {
-//     max-width: 1180px;
-//     margin: 0 auto;
-// }
-
 // Adaptive
-@media screen and (max-width:1450px) {
 
-    .container_advt {
-        max-width: 1450px;
-        margin: 0 auto;
+@media (max-width: 1100px) {
+    .picture__advt {
+        width: 100%;
     }
 
+    .pict-wpap {
+        width: 100%;
+        // height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
     .header__main {
+        font-size: 60px;
         text-align: center;
+
+        margin: 5vw 0;
     }
 
     .advt_row {
@@ -192,19 +191,26 @@ $DescrFontWeight: 400;
         margin: 5vw;
     }
 
+    .picture__advt {
+        width: 100%;
+    }
+
     .pict-wpap {
         width: 100%;
-        height: 100%;
+        // height: 100%;
     }
 
     .descr {
         align-items: center;
         margin-top: 5vw;
+
+        text-align: center;
     }
 
-    .header__descr {
+    .date__event,
+    .text__descr,
+    .btn {
         text-align: center;
-        margin-top: 20px;
     }
 
     .btn_green {
@@ -213,64 +219,7 @@ $DescrFontWeight: 400;
     }
 
     .header-wrapper {
-        margin-top: 5vw;
-        text-align: center;
-    }
-
-    .wrapper {
-        gap: 5vw;
-
-        max-height: calc(75vh);
-        overflow-x: hidden;
-        overflow-y: auto;
-        margin: 5vw;
-    }
-
-    .wrapper__col {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        border-bottom: 2px solid #000;
-
-    }
-}
-
-@media screen and (max-width:992px) {
-
-    // Страница мероприятий
-    .container_advt {
-        max-width: 992px;
-        margin: 0 auto;
-    }
-
-    .header__main {
-        font-size: 100%;
-        text-align: center;
-    }
-
-    .advt_row {
-        margin-top: 2.5vw;
-    }
-
-    .pict-wpap {
-        width: 100%;
-        height: 100%;
-    }
-
-    .descr {
-        margin-top: 2.5vw;
-    }
-
-    .container-wrap {
-        max-width: 991px;
-        margin: 0 auto;
-    }
-
-    .header-wrapper {
-        margin-top: 2.5vw;
+        margin: 5vw 0;
         text-align: center;
     }
 
@@ -279,79 +228,7 @@ $DescrFontWeight: 400;
         grid-template-columns: repeat(2, 1fr);
         gap: 5vw;
 
-        max-height: calc(100vh);
-        overflow-x: hidden;
-    }
-
-    .wrapper__col {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        border-bottom: 2px solid #000;
-
-    }
-
-    .pict-wpap {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-
-    // Страница мероприятий(конец кода)
-}
-
-@media screen and (max-width:768px) {
-    .container_advt {
-        max-width: 768px;
-        margin: 0 auto;
-    }
-
-    .header__main {
-        font-size: 100%;
-        text-align: center;
-    }
-
-    .advt_row {
-        margin-top: 1.5vw;
-    }
-
-    .descr {
-        margin-top: 1.5vw;
-        justify-content: center;
-    }
-
-    .header__descr {
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .date__event,
-    .text__descr,
-    .btn {
-        font-size: 100%;
-        text-align: center;
-
-    }
-
-    .container-wrap {
-        max-width: 768px;
-        margin: 0 auto;
-    }
-
-    .header-wrapper {
-        font-size: 100%;
-        text-align: center;
-    }
-
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 3vw;
-
-        max-height: calc(75vh);
+        max-height: calc(95vh);
         overflow-x: hidden;
         overflow-y: auto;
 
@@ -361,12 +238,21 @@ $DescrFontWeight: 400;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        padding: 45px 0;
+    }
+
+    .wrapper__col:first-child {
+        padding-top: 0;
+    }
+
+    .wrapper__col:nth-child(2) {
+        padding-top: 0;
     }
 
     .header__wrap,
     .descr__wrap,
     .date__wrap {
-        font-size: 100%;
         text-align: center;
     }
 
@@ -377,78 +263,210 @@ $DescrFontWeight: 400;
         display: flex;
         justify-content: center;
     }
+
+    .btn__mobile .btn_green {
+        @include btn(rgba(120, 189, 148, 0.34), 5px 50px);
+        color: $btnTextDark;
+        font-size: 20px;
+
+        border-radius: 20px;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width:480px) {
-    .container_advt {
-        max-width: 480px;
-        margin: 0 auto;
-    }
-
+@media (min-width: 481px) and (max-width: 767px) {
     .header__main {
-        font-size: 100%;
+        font-size: 60px;
         text-align: center;
+
+        margin: 5vw 0;
     }
 
     .advt_row {
-        margin-top: 1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5vw;
+    }
+
+    .picture__advt {
+        width: 100%;
+    }
+
+    .pict-wpap {
+        width: 100%;
+        // height: 100%;
     }
 
     .descr {
-        margin-top: 1vw;
-    }
+        align-items: center;
+        margin-top: 5vw;
 
-    .header__descr {
-        font-size: 100%;
         text-align: center;
     }
 
     .date__event,
     .text__descr,
     .btn {
-        font-size: 100%;
         text-align: center;
     }
 
-    .container-wrap {
-        max-width: 480px;
-        margin: 0 auto;
+    .btn_green {
+        width: 100%;
+        height: 100%;
     }
 
     .header-wrapper {
-        font-size: 100%;
+        margin: 5vw 0;
         text-align: center;
     }
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 2vw;
+        gap: 5vw;
 
-        max-height: calc(75vh);
-        overflow-x: hidden;
-        overflow-y: auto;
+    }
+
+    .wrapper__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding: 45px 0;
+    }
+
+    .wrapper__col:first-child {
+        padding-top: 0;
+    }
+
+    .wrapper__col:nth-child(2) {
+        padding-top: 0;
     }
 
     .header__wrap,
     .descr__wrap,
     .date__wrap {
-        font-size: 100%;
         text-align: center;
     }
 
     .btn__mobile {
+        width: 100%;
+        font-size: 100%;
+
         display: flex;
         justify-content: center;
     }
 
-    .btn__descr,
+    .btn__mobile .btn_green {
+        @include btn(rgba(120, 189, 148, 0.34), 5px 50px);
+        color: $btnTextDark;
+        font-size: 20px;
+
+        border-radius: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 481px) {
+    .header__main {
+        font-size: 40px;
+        text-align: center;
+
+        margin: 5vw 0;
+    }
+
+    .advt_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin: 5vw;
+    }
+
+    .picture__advt {
+        width: 100%;
+    }
+
+    .pict-wpap {
+        width: 100%;
+        // height: 100%;
+    }
+
+    .descr {
+        align-items: center;
+        margin-top: 7vw;
+
+        text-align: center;
+    }
+
+    .header__descr {
+        font-size: 24px;
+        text-align: center;
+
+        margin: 5vw 0;
+    }
+
+    .date__event,
+    .text__descr,
+    .btn {
+        text-align: center;
+    }
+
     .btn_green {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-wrapper {
+        font-size: 40px;
+        text-align: center;
+
+        margin: 5vw 0;
+    }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5vw;
+
+    }
+
+    .wrapper__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding: 45px 0;
+    }
+
+    .wrapper__col:first-child {
+        padding-top: 0;
+    }
+
+    .header__wrap,
+    .descr__wrap,
+    .date__wrap {
+        text-align: center;
+    }
+
+    .btn__mobile {
         width: 100%;
         font-size: 100%;
 
-        margin: 2vw auto;
+        display: flex;
+        justify-content: center;
     }
 
+    .btn__mobile .btn_green {
+        @include btn(rgba(120, 189, 148, 0.34), 5px 50px);
+        color: $btnTextDark;
+        font-size: 20px;
 
+        border-radius: 20px;
+        text-align: center;
+    }
 }
