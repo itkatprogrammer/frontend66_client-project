@@ -97,23 +97,26 @@ $secondaryFontColor: #505050;
 .top-line__title {
     display: flex;
     flex-direction: column;
-    padding: 10px 100px 10px 100px;
+    padding:40px 100px 40px 100px;
     width: 100%;
     background-color: #A0D3B2;
     text-align: center;
     box-shadow: 0px 1px 0px 0px #C7C7C7;
-
-    @media (max-width: 480px) {
-        padding: 25px 10px 25px 10px;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding: 20px 25px 20px 25px;
-    }
-
     @media (min-width: 768px) and (max-width: 991px) {
-        padding: 10px 55px 10px 55px;
+        padding: 35px 55px 35px 55px;
     }
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 35px 25px 35px 25px;
+    }
+    @media (max-width: 480px) {
+        padding: 30px 10px 30px 10px;
+    }
+
+    
+
+    
+
+
 
 
     .top-line__title-big {
