@@ -217,10 +217,6 @@
   align-items: center;
   padding-top: 60px;
   padding-bottom: 60px;
-  transition: all 0.8s;
-}
-.articles__card:hover {
-  filter: opacity(55%);
 }
 @media (min-width: 992px) and (max-width: 1189px) {
   .articles__card {
@@ -382,4 +378,23 @@
   .article__link-continue {
     display: none;
   }
+}
+
+.articles__link-read-article {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.articles__main-article:hover {
+  background-color: rgba(120, 189, 148, 0.34);
+}
+.articles__main-article:hover .articles__main-pic-box {
+  opacity: 0.8;
+}
+
+.articles__card:hover {
+  background-color: rgba(120, 189, 148, 0.34);
+}
+.articles__card:hover .articles__pic-box {
+  opacity: 0.8;
 }/*# sourceMappingURL=articles-index.css.map */
