@@ -90,6 +90,7 @@
 
 .wrapper__col:hover {
   background-color: rgba(120, 189, 148, 0.34);
+  cursor: pointer;
 }
 
 a {
@@ -133,14 +134,16 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1450px) {
   .container_advt {
-    max-width: 1160px;
+    max-width: 1450px;
     margin: 0 auto;
   }
+
   .header__main {
     text-align: center;
   }
+
   .advt_row {
     display: flex;
     flex-direction: column;
@@ -148,22 +151,32 @@ a {
     align-items: center;
     margin: 5vw;
   }
+
   .pict-wpap {
     width: 100%;
     height: 100%;
   }
+
   .descr {
     align-items: center;
     margin-top: 5vw;
   }
+
   .header__descr {
     text-align: center;
     margin-top: 20px;
   }
+
+  .btn_green {
+    width: 100%;
+    height: 100%;
+  }
+
   .header-wrapper {
     margin-top: 5vw;
     text-align: center;
   }
+
   .wrapper {
     gap: 5vw;
     max-height: 75vh;
@@ -171,6 +184,7 @@ a {
     overflow-y: auto;
     margin: 5vw;
   }
+
   .wrapper__col {
     width: 100%;
     height: 100%;
@@ -179,33 +193,41 @@ a {
     border-bottom: 2px solid #000;
   }
 }
+
 @media screen and (max-width: 1160px) and (max-width: 900px) {
   .container_advt {
-    max-width: 900px;
+    max-width: 992px;
     margin: 0 auto;
   }
+
   .header__main {
-    font-size: 70px;
+    font-size: 100%;
     text-align: center;
   }
+
   .advt_row {
     margin-top: 2.5vw;
   }
+
   .pict-wpap {
     width: 100%;
     height: 100%;
   }
+
   .descr {
     margin-top: 2.5vw;
   }
+
   .container-wrap {
-    max-width: 900px;
+    max-width: 991px;
     margin: 0 auto;
   }
+
   .header-wrapper {
     margin-top: 2.5vw;
     text-align: center;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -213,6 +235,7 @@ a {
     max-height: 100vh;
     overflow-x: hidden;
   }
+
   .wrapper__col {
     width: 100%;
     height: 100%;
@@ -220,46 +243,56 @@ a {
     flex-direction: column;
     border-bottom: 2px solid #000;
   }
+
   .pict-wpap {
     display: block;
     width: 100%;
     height: 100%;
   }
 }
+
 @media screen and (max-width: 1160px) and (max-width: 768px) {
   .container_advt {
     max-width: 768px;
     margin: 0 auto;
   }
+
   .header__main {
-    font-size: 50px;
+    font-size: 100%;
     text-align: center;
   }
+
   .advt_row {
     margin-top: 1.5vw;
   }
+
   .descr {
     margin-top: 1.5vw;
     justify-content: center;
   }
+
   .header__descr {
     font-size: 30px;
     text-align: center;
   }
+
   .date__event,
   .text__descr,
   .btn {
-    font-size: 20px;
+    font-size: 100%;
     text-align: center;
   }
+
   .container-wrap {
     max-width: 768px;
     margin: 0 auto;
   }
+
   .header-wrapper {
-    font-size: 24px;
+    font-size: 100%;
     text-align: center;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -268,55 +301,69 @@ a {
     overflow-x: hidden;
     overflow-y: auto;
   }
+
   .wrapper__col {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .header__wrap,
   .descr__wrap,
   .date__wrap {
-    font-size: 20px;
+    font-size: 100%;
     text-align: center;
   }
+
   .btn__mobile {
+    width: 100%;
+    font-size: 100%;
     display: flex;
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 1160px) and (max-width: 500px) {
   .container_advt {
-    max-width: 500px;
+    max-width: 480px;
     margin: 0 auto;
   }
+
   .header__main {
-    font-size: 30px;
+    font-size: 100%;
     text-align: center;
   }
+
   .advt_row {
     margin-top: 1vw;
   }
+
   .descr {
     margin-top: 1vw;
   }
+
   .header__descr {
-    font-size: 16px;
+    font-size: 100%;
     text-align: center;
   }
+
   .date__event,
   .text__descr,
   .btn {
-    font-size: 16px;
+    font-size: 100%;
     text-align: center;
   }
+
   .container-wrap {
-    max-width: 500px;
+    max-width: 480px;
     margin: 0 auto;
   }
+
   .header-wrapper {
-    font-size: 20px;
+    font-size: 100%;
     text-align: center;
   }
+
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -325,14 +372,18 @@ a {
     overflow-x: hidden;
     overflow-y: auto;
   }
+
   .header__wrap,
   .descr__wrap,
   .date__wrap {
-    font-size: 16px;
+    font-size: 100%;
     text-align: center;
   }
+
   .btn__mobile {
     display: flex;
     justify-content: center;
   }
-}/*# sourceMappingURL=page_events.css.map */
+}
+
+/*# sourceMappingURL=page_events.css.map */
