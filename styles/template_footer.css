@@ -68,7 +68,8 @@ footer {
   display: flex;
   gap: 20px;
 }
-.footer__icons #footer-icons {
+
+.footer__icon {
   height: 24px;
 }
 
