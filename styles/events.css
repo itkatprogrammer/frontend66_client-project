@@ -54,7 +54,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0;
-  color: #000;
+  color: #2d2d2d;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .events__title {
@@ -80,7 +80,7 @@
 .events__first,
 .events__second,
 .events__third {
-  margin-top: 100px;
+  margin-top: 50px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -170,7 +170,7 @@
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0;
-  color: #2D2D2D;
+  color: #2d2d2d;
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: left;
