@@ -185,6 +185,16 @@
   }
 }
 
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+  }
+}
+
 .btn_green {
   font-size: 24px;
   font-style: normal;
@@ -198,9 +208,6 @@
   font-family: "Arsenal", sans-serif;
   color: #505050;
   border-radius: 20px;
-}
-.btn_green #button-link {
-  text-decoration: none;
 }
 @media (max-width: 480px) {
   .btn_green {

@@ -43,6 +43,7 @@ $secondaryFontColor: #505050;
         color: $secondaryFontColor;
     }
 
+
     .article__main-title {
         display: flex;
         text-align: center;
@@ -180,15 +181,21 @@ $secondaryFontColor: #505050;
     }
 }
 
+.button-container {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+}
+
 .btn_green {
     @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
     font-family: $mainFont;
     color: $secondaryFontColor;
     border-radius: 20px;
-
-    #button-link {
-        text-decoration: none;
-    }
 
     @media (max-width: 480px) {
         font-size: 2vh;
