@@ -61,6 +61,377 @@
 }
 
 
+
+//Начинаются стили для раздела "Мероприятия"
+
+.events__wrapper {
+    background-color: #ebebeb;
+    padding-bottom: 10px;
+}
+
+.events {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.events-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media (max-width: 300px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+.events__title {
+    @include text-styles ($mainFont, 96px, 600, normal, 0);
+    color: $mainFontColor;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        font-size: 70px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        font-size: 70px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 50px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 40px;
+    }
+}
+
+.events__first,
+.events__second,
+.events__third {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 300px) {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+
+.events__third {
+    margin-bottom: 150px;
+    margin-top: 100px;
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.events__first:hover,
+.events__second:hover,
+.events__third:hover {
+    background-color: rgba(120, 189, 148, 0.34);
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    max-width: 640px;
+    min-width: 409px;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        min-width: auto;
+        align-items: center;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        min-width: auto;
+        align-items: center;
+    }
+
+    @media (max-width: 480px) {
+        min-width: auto;
+        align-items: center;
+    }
+}
+
+.event {
+    @include text-styles ($mainFont, 32px, 600, normal, 0);
+    color: $mainFontColor;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: left;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.event__data {
+    @include text-styles ($mainFont, 20px, 400, 30px, 0);
+    color: $secondaryFontColor;
+}
+
+
+.event__description {
+    @include text-styles ($mainFont, 18px, 400, 24px, 0);
+    color: $secondaryFontColor;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding-bottom: 20px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 480px) {
+        padding-bottom: 20px;
+    }
+
+    @media (max-width: 300px) {
+        padding-bottom: 20px;
+    }
+
+}
+
+
+.event__description,
+.event__data {
+    @media (min-width: 768px) and (max-width: 991px) {
+        text-align: center;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        text-align: center;
+    }
+
+    @media (max-width: 480px) {
+        text-align: center;
+    }
+
+    @media (max-width: 300px) {
+        text-align: center;
+    }
+}
+
+.event__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 480px;
+
+    @media (max-width: 480px) {
+        min-width: 300px;
+    }
+
+    @media (max-width: 300px) {
+        min-width: 220px;
+    }
+}
+
+.event__img_shadow-right {
+    box-shadow: -10px 10px 10px rgb(0, 0, 0, 0.3);
+}
+
+
+
+.event__img_shadow-left {
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+}
+
+#event-img1 {
+    display: none;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+    }
+
+    @media (max-width: 300px) {
+        display: flex;
+    }
+}
+
+#event-img2 {
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: none;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+    }
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+
+    @media (max-width: 300px) {
+        display: none;
+    }
+}
+
+//Заканчиваются стили для раздела "Мероприятия"
+
+//Начинаются стили для раздела "Видео"
+.container-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.video__title {
+    @include text-styles ($mainFont, 90px, 600, normal, 0px);
+    color: $mainFontColor;
+}
+
+.video__line {
+    max-width: 1180px;
+    margin: 50px auto;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin: 50px auto;
+    }
+
+    @media (max-width: 480px) {
+        margin: 50px auto;
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1180px;
+}
+
+iframe {
+    width: 1180px;
+    height: 680px;
+    padding: 20px;
+    border: none;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 600px;
+        height: 340px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        width: 300px;
+        height: 170px;
+    }
+
+    @media (max-width: 480px) {
+        width: 300px;
+        height: 170px;
+    }
+}
+
+.video__subtitle {
+    @include text-styles ($mainFont, 32px, 600, normal, 0px);
+    color: $mainFontColor;
+    text-align: center;
+    padding: 50px;
+    max-width: 770px;
+}
+
+.video__description {
+    @include text-styles ($mainFont, 20px, 400, 30px, 0px);
+    color: $secondaryFontColor;
+    text-align: center;
+    max-width: 770px;
+}
+
+//Заканчиваются стили для раздела "Видео"
+
+
+
+
 //Начинаются стили для раздела "Статьи". Катя
 .articles {
     background-color: #161616;
@@ -391,3 +762,136 @@
 }
 
 //Заканчиваются стили для раздела "Статьи" Катя
+
+//Начинаются стили для футера
+
+footer {
+    background-color: #F1F1F1;
+    height: 302px;
+    padding-top: 70px;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: 450px;
+        padding-top: 50px;
+    }
+
+    @media (max-width: 480px) {
+        height: 450px;
+        padding-top: 50px;
+    }
+
+    @media (max-width: 300px) {
+        height: 400px;
+        padding-top: 30px;
+    }
+}
+
+.footer-container {
+    max-width: 1180px;
+    margin: 0px auto;
+}
+
+.container-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.footer__logo {
+    @include text-styles ($mainFont, 24px, 600, 24px, 0);
+    color: $mainFontColor;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    #footer-logo {
+        height: 45px;
+    }
+}
+
+.footer__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer__icon {
+    height: 24px;
+}
+
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        gap: 40px;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        gap: 30px;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 30px;
+        gap: 20px;
+    }
+}
+
+.copyright {
+    @include text-styles ($mainFont, 18px, 400, normal, 0);
+    color: $secondaryFontColor;
+
+    @media (max-width: 300px) {
+        font-size: 14px;
+    }
+}
+
+.footer__menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @media (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.footer__menu a {
+    @include text-styles ($mainFont, 18px, 400, normal, 0);
+    text-decoration: none;
+    color: $secondaryFontColor;
+    display: flex;
+    gap: 30px;
+}
+
+//Заканчиваются стили для футера

@@ -60,6 +60,441 @@
   margin: auto;
 }
 
+.events__wrapper {
+  background-color: #ebebeb;
+  padding-bottom: 10px;
+}
+
+.events {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.events-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 300px) {
+  .events-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.events__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #2d2d2d;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .events__title {
+    font-size: 70px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .events__title {
+    font-size: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .events__title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 300px) {
+  .events__title {
+    font-size: 40px;
+  }
+}
+
+.events__first,
+.events__second,
+.events__third {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .events__first,
+  .events__second,
+  .events__third {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .events__first,
+  .events__second,
+  .events__third {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .events__first,
+  .events__second,
+  .events__third {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 300px) {
+  .events__first,
+  .events__second,
+  .events__third {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.events__third {
+  margin-bottom: 150px;
+  margin-top: 100px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.events__first:hover,
+.events__second:hover,
+.events__third:hover {
+  background-color: rgba(120, 189, 148, 0.34);
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  max-width: 640px;
+  min-width: 409px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .event-container {
+    min-width: auto;
+    align-items: center;
+  }
+}
+
+.event {
+  font-family: "Arsenal", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #2d2d2d;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .event {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .event {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.event__data {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  color: #505050;
+}
+
+.event__description {
+  font-family: "Arsenal", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #505050;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 300px) {
+  .event__description {
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+@media (max-width: 300px) {
+  .event__description,
+  .event__data {
+    text-align: center;
+  }
+}
+
+.event__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 480px;
+}
+@media (max-width: 480px) {
+  .event__img {
+    min-width: 300px;
+  }
+}
+@media (max-width: 300px) {
+  .event__img {
+    min-width: 220px;
+  }
+}
+
+.event__img_shadow-right {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event__img_shadow-left {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#event-img1 {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #event-img1 {
+    display: flex;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #event-img1 {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  #event-img1 {
+    display: flex;
+  }
+}
+@media (max-width: 300px) {
+  #event-img1 {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #event-img2 {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  #event-img2 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  #event-img2 {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  #event-img2 {
+    display: none;
+  }
+}
+
+.container-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-video {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .container-video {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.video__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #2d2d2d;
+}
+
+.video__line {
+  max-width: 1180px;
+  margin: 50px auto;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .video__line {
+    margin: 50px auto;
+  }
+}
+@media (max-width: 480px) {
+  .video__line {
+    margin: 50px auto;
+  }
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1180px;
+}
+
+iframe {
+  width: 1180px;
+  height: 680px;
+  padding: 20px;
+  border: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  iframe {
+    width: 600px;
+    height: 340px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  iframe {
+    width: 300px;
+    height: 170px;
+  }
+}
+@media (max-width: 480px) {
+  iframe {
+    width: 300px;
+    height: 170px;
+  }
+}
+
+.video__subtitle {
+  font-family: "Arsenal", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #2d2d2d;
+  text-align: center;
+  padding: 50px;
+  max-width: 770px;
+}
+
+.video__description {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #505050;
+  text-align: center;
+  max-width: 770px;
+}
+
 .articles {
   background-color: #161616;
   color: #FFF;
@@ -446,4 +881,154 @@
 }
 .articles__card:hover .articles__pic-box {
   opacity: 0.8;
+}
+
+footer {
+  background-color: #F1F1F1;
+  height: 302px;
+  padding-top: 70px;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  footer {
+    height: 450px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  footer {
+    height: 450px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 300px) {
+  footer {
+    height: 400px;
+    padding-top: 30px;
+  }
+}
+
+.footer-container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.footer__logo {
+  font-family: "Arsenal", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__logo #footer-logo {
+  height: 45px;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__icon {
+  height: 24px;
+}
+
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 40px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .container-menu {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    gap: 20px;
+  }
+}
+
+.copyright {
+  font-family: "Arsenal", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #505050;
+}
+@media (max-width: 300px) {
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+.footer__menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.footer__menu a {
+  font-family: "Arsenal", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+  color: #505050;
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=index.css.map */
