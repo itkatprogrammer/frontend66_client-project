@@ -1,0 +1,248 @@
+@import "variables";
+@import "mixins";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.welcome__content-box {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding-bottom: 25px;
+    }   
+}
+
+.welcome__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 40px 0px;
+    max-width: 800px;
+    max-height: 500px;
+    
+    @media (max-width: 480px) {
+        max-width: 450px;
+        max-height: none;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        max-width: 450px;
+        max-height: none;
+        margin: 0;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 645px;
+        margin: 21px 0px 33px 0px;
+    }
+    @media (min-width: 992px) and (max-width: 1449px) {
+        max-width: 690px;
+        margin: 36px 0px 47px 0px;
+    }
+    @media (min-width: 1450px) and (max-width: 1920px) {
+        min-width: 582px
+    }
+}
+
+.welcome__light-box {
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 40px 30px 40px;
+    @media (max-width: 480px) {
+        max-height: unset;
+        padding: 9px 25px 35px 7px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 20px 40px 16px 40px;
+        max-height: none;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 647.5px;
+        max-height: none;
+        display: flex;
+        align-items: center;
+    }
+    @media (min-width: 992px) and (max-width: 1449px) {
+        padding: 0px 40px 30px 40px;
+    }
+}
+
+.welcome__content{
+    display: flex;
+    flex-direction: column;
+    max-width: none;
+    max-width: 600px;
+    .welcome__title {
+        @include text-styles ($mainFont, 32px, 600, normal, 0);
+        color: #2D2D2D;
+        text-align: center;
+    }
+    .welcome__general-text {
+        @include text-styles ($mainFont, 20px, 400, 30px, 0);
+        text-align: justify;
+        margin:42px 0px 35px 0px;
+        color: #505050;
+        @media (max-width:480px) {
+            margin: 18px 0px 18px 0px;
+        }  
+        @media (min-width:481px) and (max-width:767px) {
+            margin: 26px 0px 7px 0px; 
+        }  
+        @media (min-width:768px) and (max-width:991px) {
+            margin: 15px 0px 15px 0px;
+        }
+        @media (min-width:992px) and (max-width:1449px) {
+            margin: 15px 0px 15px 0px;
+        }     
+    }
+    .welcome__welcome {
+        @include text-styles ($mainFont, 28px, 600, normal, 0);
+        color: #2D2D2D;
+        text-align: center;
+    }
+}
+
+.welcome__dark-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(30, 44, 48, 1);
+    max-height: 122px;
+    justify-content: center;
+    width: 100%;
+    @media (max-width: 480px)  {
+        justify-content: flex-end;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-width: none;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        justify-content: normal;
+        min-width: auto;
+    }
+    .dark-box__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-left: 51px;
+        padding-right: 51px;
+        min-width: 644px;
+        @media (max-width: 480px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            max-height: max-content;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding-left: 35px;
+            padding-right: 35px;
+            min-width: auto;
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+            flex-direction: column-reverse;
+            align-items: flex-end;
+            max-height: max-content;
+            padding-left: 35px;
+            padding-right: 35px;
+            max-height: none;
+            align-items: stretch;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            min-width: 303px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            max-width: none;
+        }
+        @media (min-width: 992px) and (max-width: 1449px) {
+            max-height: none;
+            gap: 24px;
+        }
+    }
+}
+
+.welcome__person-info {
+    display: flex;
+    gap: 38px;
+    @media (max-width: 480px) {
+        flex-direction: row;
+        align-items: none;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: none;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        flex-direction: row;
+        align-items: none;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: none;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        gap: 44px;
+    }
+    @media (min-width: 992px) and (max-width: 1449px) {
+        max-width: none;
+        gap: 25px;
+    }
+}
+
+.person-info__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    min-width: 138px;
+    justify-content: space-evenly;
+    @media (max-width: 480px) {
+        align-items: flex-end;
+        text-align: end;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        min-width: auto;
+    }
+    .person-name {
+        @include text-styles ($mainFont, 24px, 700, 160%, -0.2px); 
+    }
+    .person-status {
+        @include text-styles ($mainFont, 18px, 600, 160%, 0.42px);
+        @media (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+    
+}
+
+.estimate__pic {
+    height: 40px;
+    @media (min-width: 992px) and (max-width: 1449px) {
+        height: 21px;
+    }
+    @media (max-width: 480px) {
+        height: 21px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        height: auto;
+    }
+}
+
+.person-quote {
+    @media (min-width: 992px) and (max-width: 1449px) {
+        display: flex;
+        align-self: flex-start;
+    }
+    @media (max-width: 480px) {
+        display: none;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: none;
+    }
+}
