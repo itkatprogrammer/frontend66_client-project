@@ -134,9 +134,9 @@
   font-family: "Arsenal", sans-serif;
   font-size: 42px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
-  color: #505050;
+  color: #FFF;
 }
 @media (max-width: 480px) {
   .top-line__title .top-line__title-small {
