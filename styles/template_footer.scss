@@ -15,14 +15,20 @@ footer {
     padding-top: 70px;
 
     @media (min-width: 481px) and (max-width: 767px) {
-        height: 550px;
+        height: 450px;
+        padding-top: 50px;
     }
 
     @media (max-width: 480px) {
-        height: 550px;
+        height: 450px;
+        padding-top: 50px;
+    }
+
+    @media (max-width: 300px) {
+        height: 400px;
+        padding-top: 30px;
     }
 }
-
 
 .footer-container {
     max-width: 1180px;
@@ -49,7 +55,7 @@ footer {
 
 .footer__logo {
     @include text-styles ($mainFont, 24px, 600, 24px, 0);
-    color: #2d2d2d;
+    color: $mainFontColor;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -78,25 +84,28 @@ footer {
     @media (min-width: 768px) and (max-width: 991px) {
         display: flex;
         flex-direction: column-reverse;
-        gap: 50px;
+        margin-top: 30px;
+        gap: 40px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
         flex-direction: column-reverse;
-        gap: 50px;
+        margin-top: 30px;
+        gap: 30px;
     }
 
     @media (max-width: 480px) {
         display: flex;
         flex-direction: column-reverse;
-        gap: 50px;
+        margin-top: 30px;
+        gap: 20px;
     }
 }
 
 .copyright {
     @include text-styles ($mainFont, 18px, 400, normal, 0);
-    color: #505050;
+    color: $secondaryFontColor;
 
     @media (max-width: 300px) {
         font-size: 14px;
@@ -111,18 +120,20 @@ footer {
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 
     @media (max-width: 480px) {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
 }
 
 .footer__menu a {
     @include text-styles ($mainFont, 18px, 400, normal, 0);
     text-decoration: none;
-    color: #505050;
+    color: $secondaryFontColor;
     display: flex;
     gap: 30px;
 }
