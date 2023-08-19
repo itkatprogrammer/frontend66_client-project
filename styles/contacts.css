@@ -5,12 +5,12 @@
 }
 
 .contacts__title {
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 70px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
+  letter-spacing: 0px;
+  color: #2d2d2d;
   text-align: center;
   margin-top: 100px;
   display: flex;
@@ -35,14 +35,14 @@
 .contacts__websites,
 .contacts__support,
 .contacts__connection {
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 32px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
-  padding: 50px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  color: #505050;
   text-align: center;
+  padding: 30px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .contacts__websites,
@@ -60,17 +60,20 @@
 }
 
 img {
-  height: 50px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
   text-decoration: none;
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
+  letter-spacing: 0px;
+  color: #505050;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   a {
@@ -87,6 +90,7 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  max-width: 70px;
 }
 
 .websites-container,
@@ -105,14 +109,16 @@ a {
 }
 
 .mail {
-  color: #000;
-  font-family: Inter;
+  font-family: "Arsenal", sans-serif;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
-  text-align: center;
+  letter-spacing: 0px;
+  color: #505050;
   margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .mail {
