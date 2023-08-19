@@ -36,6 +36,7 @@
   padding-bottom: 20px;
 }
 .article__main-content a {
+  cursor: pointer;
   color: #505050;
 }
 .article__main-content .article__main-title {
@@ -143,7 +144,7 @@
     max-width: 600px;
   }
 }
-.article__main-content .articles-image #article-img {
+.article__main-content .articles-image .article-img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
