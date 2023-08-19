@@ -1,6 +1,11 @@
 @import "variables";
 @import "mixins";
 
+// Header (start code)
+
+// Header (end code)
+
+// Content (start code)
 .wrap_event {
     display: flex;
     flex-direction: column;
@@ -8,35 +13,79 @@
     text-align: center;
 }
 
+.header__descr {
+    font-family: $mainFont;
+    color: #2d2d2d;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 5vw 0;
+}
+
 .picture__main {
     display: flex;
     justify-content: center;
     width: 100%;
-
+    min-height: 100%;
     margin-top: 40px;
 }
 
 .pict-main {
     width: 100%;
-    height: 60vw;
-}
-
-.btn_green,
-.btn .btn_green {
-    width: 100%;
+    min-height: 100%;
 }
 
 .btn__descr .btn_green {
-    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
-    color: $btnTextDark;
-    font-size: 20px;
 
+    width: 50%;
+    @include btn(rgba(120, 189, 148, 0.34), 18px 20px);
+    color: #505050;
+    font-size: 20px;
     border-radius: 20px;
     text-align: center;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .btn__descr .btn_green {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2vw auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .btn__descr .btn_green {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        width: 100%;
+        margin: 2vw auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn__descr .btn_green {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2vw auto;
+    }
+}
+
+
 .text__descr {
     font-family: $mainFont;
+    color: #505050;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -45,86 +94,69 @@
     margin-top: 5vw;
 }
 
-.btn__descr {
-    margin-top: 25px;
+@media (min-width: 768px) and (max-width: 991px) {
+    .text__descr {
+        text-align: center;
+    }
 }
 
-.btn__descr .btn_green {
-    @include btn(rgba(120, 189, 148, 0.34), 18px 50px);
-    color: $btnTextDark;
-    font-size: 20px;
+@media (min-width: 481px) and (max-width: 767px) {
+    .text__descr {
+        text-align: center;
+    }
+}
 
-    border-radius: 20px;
-    text-align: center;
+@media screen and (max-width: 481px) {
+    .text__descr {
+        text-align: center;
+    }
 }
 
 .container_btn {
-    max-width: 1180px;
     margin: 0 auto;
 
     display: flex;
     justify-content: center;
-
+    text-align: center;
     margin-top: 50px;
 }
 
 .container_btn .btn_green {
+    width: 100%;
     @include btn(rgba(120, 189, 148, 0.34), 15px 50px);
-    color: $btnTextDark;
+    color: #505050;
     font-size: 20px;
 
     border-radius: 20px;
+}
+
+.btn__descr {
+    margin-top: 25px;
+}
+
+.btn .btn_green {
     text-align: center;
 }
 
-// Страница мероприятий(конец кода)
-
 // Adaptive
-
-
-@media screen and (max-width:992px) {
-    .container_advt {
-        max-width: 992px;
-        margin: 0 auto;
-        padding: 0 auto;
-    }
-
-
-    .picture__main {
-        max-width: 992px;
-        margin: 0 auto;
-
-    }
-
-    .pict-main {
-        display: block;
-        width: 100%;
-
-        padding: 5vw;
-    }
-
-    .container_wrapper {
-        max-width: 992px;
-        margin: 0 auto;
-
-        margin-top: 2.5vw;
-        text-align: center;
-    }
-
-    .btn__descr,
-    .btn_green {
-
-        margin: 2vw auto;
-    }
-
+@media (min-width: 768px) and (max-width: 991px) {
     ul {
         list-style: none
     }
-
-    .text__descr {
-        font-size: 100%;
-    }
-
-
-
 }
+
+@media (min-width: 481px) and (max-width: 767px) {
+    ul {
+        list-style: none
+    }
+}
+
+@media screen and (max-width: 481px) {
+    ul {
+        list-style: none
+    }
+}
+
+// Content (end code)
+// Footer (start code)
+// Footer (end code)
