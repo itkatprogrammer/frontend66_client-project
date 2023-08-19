@@ -69,6 +69,7 @@ $secondaryFontColor: #505050;
         flex-direction: column;
         align-items: center;
         border-bottom: 2px solid #C7C7C7;
+        cursor: pointer;
     }
 
     .atricles__card:hover {
@@ -154,6 +155,7 @@ $secondaryFontColor: #505050;
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .container-wrapper {

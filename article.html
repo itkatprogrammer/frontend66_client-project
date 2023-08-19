@@ -17,9 +17,10 @@
 <body>
     <header class="top-line__main part">
         <div class="top-line__navigation">
-            <div class="top-line__logo"><a href="index.html"><img src="img/black_logo989to877.png" alt="logo"
-                        id="top-line-logo" /></a>
+            <div class="top-line__logo"><a href="index.html"><img class="top-line-logo" src="img/black_logo989to877.png"
+                        alt="logo" /></a>
             </div>
+
             <div class="top-line__menu">
                 <a href="about.html" class="menu_link">О нас</a>
                 <a href="article.html" class="menu_link">Статьи</a>
@@ -27,6 +28,22 @@
                 <a href="page_events.html" class="menu_link">Мероприятия</a>
                 <a href="contacts.html" class="menu_link">Контакты</a>
             </div>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a href="about.html" class="menu_link">О нас</a></li>
+                    <li><a href="article.html" class="menu_link">Статьи</a></li>
+                    <li><a href="video.html" class="menu_link">Видео</a></li>
+                    <li><a href="page_events.html" class="menu_link">Мероприятия</a></li>
+                    <li><a href="contacts.html" class="menu_link">Контакты</a></li>
+                </ul>
+            </div>
+
+
         </div>
         <div class="top-line__title">
             <div class="top-line__title-big">Vegan Studies</div>
@@ -35,16 +52,16 @@
         <div class="top-line__social">
             <div class="top-line__text">Найти и поддержать нас:</div>
             <div class="top-line__icons">
-                <a href="https://t.me/veganstudies" target="_blank"><img src="img/telegram_icon.png" alt="tel-icon"
-                        id="top-icons" /></a>
-                <a href="https://vk.com/veganstudies" target="_blank"><img src="img/vk_icon.png" alt="vk-icon"
-                        id="top-icons" /></a>
+                <a href="https://t.me/veganstudies" target="_blank"><img class="top-icons" src="img/telegram_icon.png"
+                        alt="tel-icon" /></a>
+                <a href="https://vk.com/veganstudies" target="_blank"><img class="top-icons" src="img/vk_icon.png"
+                        alt="vk-icon" /></a>
                 <a href="https://www.youtube.com/channel/UC5JoJG0XG5Iv-nCr9KXEy0g" target="_blank"><img
-                        src="img/youtube.svg" alt="youtube-icon" id="top-icons" /></a>
+                        class="top-icons" src="img/youtube.svg" alt="youtube-icon" /></a>
                 <a href="https://boosty.to/veganstudies" target="_blank"><img src="img/boosty_icon.png"
-                        alt="boosty-icon" id="top-icons" /></a>
+                        class="top-icons" alt="boosty-icon" /></a>
                 <a href="https://patreon.com/VeganStudiesandCriticalAnimalStudies" target="_blank"><img
-                        src="img/patreon_icon.png" alt="patreon-icon" id="top-icons" /></a>
+                        class="top-icons" src="img/patreon_icon.png" alt="patreon-icon" /></a>
             </div>
         </div>
     </header>
@@ -52,7 +69,8 @@
     <div class="articles__main">
         <div class="articles__container">
             <div class="atricles__card"><a href="derrida_article.html">
-                    <div class="atricles__image"><img class="news-pic" src="img/article1.webp" alt="news-pic"></div>
+                    <div class="atricles__image"><img class="news-pic" src="img/all_articles/article1.webp"
+                            alt="news-pic"></div>
                     <div class="card-info">
                         <div class="card-info__title">Деррида и «Половая политика мяса»</div>
                         <div class="card-info__description">Перевод обсуждения исследовательницы веган-феминизма Кэрол
@@ -65,7 +83,8 @@
 
         <div class="atricles__card"><a href="https://drive.google.com/file/d/1UpjNvzUqbVqJ4NXVbgomIB988yWuVfIH/view"
                 target="_blank">
-                <div class="atricles__image"><img class="news-pic" src="img/article2.webp" alt="news-pic"></div>
+                <div class="atricles__image"><img class="news-pic" src="img/all_articles/article2.webp" alt="news-pic">
+                </div>
                 <div class="card-info">
                     <div class="card-info__title">Reverse Speciesism, Subjectivity, and Becoming the Other in Carol
                         Emshwiller’s Novel The Mount</div>
@@ -76,7 +95,8 @@
     </div>
 
     <div class="atricles__card"><a href="subjectivity_article.html">
-            <div class="atricles__image"><img class="news-pic" src="img/article3.webp" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article3.webp" alt="news-pic">
+            </div>
             <div class="card-info">
                 <div class="card-info__title">Субъективность животных</div>
                 <div class="card-info__description">Статья о философских размышлениях и концептах субъективности
@@ -87,7 +107,7 @@
     </div>
 
     <div class="atricles__card"><a href="specisism_article.html">
-            <div class="atricles__image"><img class="news-pic" src="img/article4.jpg" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article4.jpg" alt="news-pic"></div>
             <div class="card-info">
                 <div class="card-info__title">Спесишизм и права животных</div>
                 <div class="card-info__description">О спесишизме как об одной из самых прочных форм дискриминации и
@@ -98,7 +118,7 @@
 
     <div class="atricles__card"><a href="https://drive.google.com/file/d/1bhNLiDn0dmks7bqyr9UnxgiBF6R8BoDl/view"
             target="_blank">
-            <div class="atricles__image"><img class="news-pic" src="img/article9.png" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article9.png" alt="news-pic"></div>
             <div class="card-info">
                 <div class="card-info__title">Становление-животным, инаковость Других и веганство</div>
                 <div class="card-info__description">Презентация для конференции от Санкт-Петербургского государственного
@@ -109,7 +129,7 @@
     </div>
 
     <div class="atricles__card"><a href="animals_article.html">
-            <div class="atricles__image"><img class="news-pic" src="img/article5.jpg" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article5.jpg" alt="news-pic"></div>
             <div class="card-info">
                 <div class="card-info__title">Животные, аномалии и неорганические Другие</div>
                 <div class="card-info__description">Философиня-постгуманистка Рози Брайдотти размышляет о
@@ -120,7 +140,8 @@
     </div>
 
     <div class="atricles__card"><a href="critical_article.html">
-            <div class="atricles__image"><img class="news-pic" src="img/article6.webp" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article6.webp" alt="news-pic">
+            </div>
             <div class="card-info">
                 <div class="card-info__title">Критические термины для исследований животных</div>
                 <div class="card-info__description">Исследовательница Лори Груэн об истории, интерсекциональности и
@@ -131,7 +152,8 @@
 
     <div class="atricles__card"><a href="https://drive.google.com/file/d/1fQOQTUOkYFDVdJASLXgBsS6qdd-62C-H/view"
             target="_blank">
-            <div class="atricles__image"><img class="news-pic" src="img/article10.jpg" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article10.jpg" alt="news-pic">
+            </div>
             <div class="card-info">
                 <div class="card-info__title">Спесишизм, субъективность животных и веганство</div>
                 <div class="card-info__description">Лекция о философской концепции субъективности животных, почему
@@ -143,7 +165,8 @@
     </div>
 
     <div class="atricles__card"><a href="against_article.html">
-            <div class="atricles__image"><img class="news-pic" src="img/article7.webp" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article7.webp" alt="news-pic">
+            </div>
             <div class="card-info">
                 <div class="card-info__title">Сопротивление спесишизму и расширение сообщества равных</div>
                 <div class="card-info__description">Исследователь поведения и сознания животных, а также
@@ -155,7 +178,7 @@
 
     <div class="atricles__card"><a href="https://drive.google.com/file/d/1ZLdffvHDYBvG0vKuw_6OoMUHDaVSE0Mh/view"
             target="_blank">
-            <div class="atricles__image"><img class="news-pic" src="img/article8.png" alt="news-pic"></div>
+            <div class="atricles__image"><img class="news-pic" src="img/all_articles/article8.png" alt="news-pic"></div>
             <div class="card-info">
                 <div class="card-info__title">Теории и практики в образовании и педагогике в исследованиях человека и
                     животных и в критических исследованиях животных</div>

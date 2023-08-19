@@ -209,6 +209,7 @@
   font-family: "Arsenal", sans-serif;
   color: #505050;
   border-radius: 20px;
+  cursor: pointer;
 }
 @media (max-width: 480px) {
   .btn_green {

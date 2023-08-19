@@ -197,6 +197,7 @@ $secondaryFontColor: #505050;
     font-family: $mainFont;
     color: $secondaryFontColor;
     border-radius: 20px;
+    cursor: pointer;
 
     @media (max-width: 480px) {
         font-size: 2vh;
