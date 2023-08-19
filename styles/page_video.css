@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.video__title {
+  font-family: "Arsenal", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0px;
+  color: #2d2d2d;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.video__description {
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #505050;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+iframe {
+  width: 1180px;
+  height: 680px;
+  padding: 100px;
+  border: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  iframe {
+    width: 600px;
+    height: 340px;
+    padding: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  iframe {
+    width: 450px;
+    height: 255px;
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  iframe {
+    width: 300px;
+    height: 170px;
+    padding: 20px;
+  }
+}
+@media (max-width: 300px) {
+  iframe {
+    width: 200px;
+    height: 113px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=page_video.css.map */

@@ -1,0 +1,181 @@
+@import "variables";
+@import "mixins";
+
+// Header (start code)
+
+// Header (end code)
+
+// Content (start code)
+.wrap_event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__descr {
+    font-family: $mainFont;
+    color: #2d2d2d;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    margin: 5vw 0;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header__descr {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .header__descr {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__descr {
+        font-size: 24px;
+    }
+}
+
+.picture__main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 40px;
+}
+
+.pict-main {
+    width: 100%;
+    min-height: 100%;
+}
+
+.btn__descr .btn_green {
+
+    width: 50%;
+    @include btn(rgba(120, 189, 148, 0.34), 18px 20px);
+    color: #505050;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .btn__descr .btn_green {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2vw auto;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .btn__descr .btn_green {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        width: 100%;
+        margin: 2vw auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn__descr .btn_green {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        margin: 2vw auto;
+    }
+}
+
+
+.text__descr {
+    font-family: $mainFont;
+    color: #505050;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+
+    margin-top: 5vw;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text__descr {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .text__descr {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .text__descr {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+.container_btn {
+    margin: 5vw auto;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container_btn .btn_green {
+    width: 100%;
+    @include btn(rgba(120, 189, 148, 0.34), 15px 50px);
+    color: #505050;
+    font-size: 20px;
+
+    border-radius: 20px;
+}
+
+.btn__descr {
+    margin-top: 25px;
+}
+
+.btn .btn_green {
+    text-align: center;
+}
+
+
+
+// Adaptive
+@media (min-width: 768px) and (max-width: 991px) {
+    ul {
+        list-style: none
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    ul {
+        list-style: none
+    }
+}
+
+@media screen and (max-width: 481px) {
+    ul {
+        list-style: none
+    }
+}

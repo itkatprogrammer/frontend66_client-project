@@ -7,16 +7,24 @@
 footer {
   background-color: #F1F1F1;
   height: 302px;
-  padding-top: 38px;
+  padding-top: 70px;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   footer {
-    height: 550px;
+    height: 450px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 480px) {
   footer {
-    height: 550px;
+    height: 450px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 300px) {
+  footer {
+    height: 400px;
+    padding-top: 30px;
   }
 }
 
@@ -51,7 +59,7 @@ footer {
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0;
-  color: #000000;
+  color: #2d2d2d;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -79,21 +87,24 @@ footer {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 40px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 30px;
   }
 }
 @media (max-width: 480px) {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 20px;
   }
 }
 
@@ -120,12 +131,14 @@ footer {
   .footer__menu {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 @media (max-width: 480px) {
   .footer__menu {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 
@@ -136,7 +149,7 @@ footer {
   line-height: normal;
   letter-spacing: 0;
   text-decoration: none;
-  color: #000000;
+  color: #505050;
   display: flex;
   gap: 30px;
 }/*# sourceMappingURL=template_footer.css.map */

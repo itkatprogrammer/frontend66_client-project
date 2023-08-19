@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -39,13 +40,294 @@
     padding: 9px 70px;
   }
 }
-.top-line__navigation .top-line__logo #top-line-logo {
+.top-line__navigation .top-line__logo .top-line-logo {
   height: 45px;
 }
 @media (max-width: 480px) {
   .top-line__navigation .top-line__logo {
     height: 15px;
     padding-bottom: 55px;
+  }
+}
+@media (max-width: 460px) {
+  .top-line__navigation .hamburger-menu {
+    /* добавляем "гамбургер" */
+    /* контейнер меню */
+    /* элементы меню */
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle {
+    display: none;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #2D2D2D;
+    font-family: "Arsenal", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .top-line__navigation .hamburger-menu .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    transition-duration: 0.25s;
+  }
+}
+@media (max-width: 480px) {
+  .top-line__navigation .hamburger-menu {
+    /* добавляем "гамбургер" */
+    /* контейнер меню */
+    /* элементы меню */
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle {
+    display: none;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    display: block;
+    padding: 10px 20px;
+    color: #2D2D2D;
+    font-family: "Arsenal", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .top-line__navigation .hamburger-menu .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    transition-duration: 0.25s;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .top-line__navigation .hamburger-menu {
+    /* добавляем "гамбургер" */
+    /* контейнер меню */
+    /* элементы меню */
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle {
+    display: none;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    padding: 60px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #ECEFF1;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #2D2D2D;
+    font-family: "Arsenal", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .top-line__navigation .hamburger-menu .menu__item:hover {
+    background-color: #CFD8DC;
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .top-line__navigation .hamburger-menu #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .top-line__navigation .hamburger-menu .menu__btn > span,
+  .top-line__navigation .hamburger-menu .menu__btn > span::before,
+  .top-line__navigation .hamburger-menu .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__box {
+    transition-duration: 0.25s;
+  }
+  .top-line__navigation .hamburger-menu .menu__item {
+    transition-duration: 0.25s;
+  }
+}
+@media (min-width: 768px) {
+  .top-line__navigation .hamburger-menu {
+    display: none;
   }
 }
 .top-line__navigation .top-line__menu {
@@ -56,16 +338,12 @@
 }
 @media (max-width: 480px) {
   .top-line__navigation .top-line__menu {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .top-line__navigation .top-line__menu {
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -82,6 +360,7 @@
   letter-spacing: 0;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .top-line__title {
@@ -202,12 +481,13 @@
 .top-line__social .top-line__icons {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
-.top-line__social .top-line__icons #top-icons {
+.top-line__social .top-line__icons .top-icons {
   height: 24px;
 }
 @media (max-width: 480px) {
-  .top-line__social .top-line__icons #top-icons {
+  .top-line__social .top-line__icons .top-icons {
     height: 20px;
   }
 }
@@ -215,4 +495,5 @@
 a {
   text-decoration: none;
   color: #000;
+  cursor: pointer;
 }/*# sourceMappingURL=template_top-line.css.map */
