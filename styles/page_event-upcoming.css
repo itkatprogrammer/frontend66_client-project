@@ -16,6 +16,21 @@
   margin: 5vw 0;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .header__descr {
+    font-size: 36px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .header__descr {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__descr {
+    font-size: 24px;
+  }
+}
 .picture__main {
   display: flex;
   justify-content: center;
@@ -40,7 +55,7 @@
   font-family: "Arsenal", sans-serif;
   cursor: pointer;
   border: none;
-  color: #2d2d2d;
+  color: #505050;
   font-size: 20px;
   border-radius: 20px;
   text-align: center;
@@ -56,7 +71,6 @@
     margin: 2vw auto;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   .btn__descr .btn_green {
     width: 70%;
@@ -68,7 +82,6 @@
     margin: 2vw auto;
   }
 }
-
 @media screen and (max-width: 480px) {
   .btn__descr .btn_green {
     width: 100%;
@@ -79,7 +92,6 @@
     margin: 2vw auto;
   }
 }
-
 .text__descr {
   font-family: "Arsenal", sans-serif;
   color: #505050;
@@ -92,40 +104,24 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .text__descr {
+    font-size: 20px;
     text-align: center;
   }
 }
-
-.btn__descr .btn_green {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background-color: rgba(120, 189, 148, 0.34);
-  padding: 18px 50px;
-  font-family: "Arsenal", sans-serif;
-  cursor: pointer;
-  border: none;
-  color: #2d2d2d;
-  font-size: 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
 @media (min-width: 481px) and (max-width: 767px) {
   .text__descr {
+    font-size: 20px;
     text-align: center;
   }
 }
-
 @media screen and (max-width: 481px) {
   .text__descr {
+    font-size: 18px;
     text-align: center;
   }
 }
-
 .container_btn {
-  margin: 0 auto;
+  margin: 5vw auto;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -161,17 +157,13 @@
     list-style: none;
   }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
   ul {
     list-style: none;
   }
 }
-
 @media screen and (max-width: 481px) {
   ul {
     list-style: none;
   }
-}
-
-/*# sourceMappingURL=individual-event1.css.map */
+}/*# sourceMappingURL=page_event-upcoming.css.map */
