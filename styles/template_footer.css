@@ -11,12 +11,20 @@ footer {
 }
 @media (min-width: 481px) and (max-width: 767px) {
   footer {
-    height: 550px;
+    height: 450px;
+    padding-top: 50px;
   }
 }
 @media (max-width: 480px) {
   footer {
-    height: 550px;
+    height: 450px;
+    padding-top: 50px;
+  }
+}
+@media (max-width: 300px) {
+  footer {
+    height: 400px;
+    padding-top: 30px;
   }
 }
 
@@ -79,21 +87,24 @@ footer {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 40px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 30px;
   }
 }
 @media (max-width: 480px) {
   .container-menu {
     display: flex;
     flex-direction: column-reverse;
-    gap: 50px;
+    margin-top: 30px;
+    gap: 20px;
   }
 }
 
@@ -120,12 +131,14 @@ footer {
   .footer__menu {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 @media (max-width: 480px) {
   .footer__menu {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 }
 
