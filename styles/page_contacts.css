@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.contacts {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .contacts__content-box {
   max-width: 1180px;
   margin: 0 auto;
@@ -209,4 +214,4 @@ a {
 
 a:visited {
   color: inherit;
-}/*# sourceMappingURL=page_contacts2.css.map */
+}/*# sourceMappingURL=page_contacts.css.map */
