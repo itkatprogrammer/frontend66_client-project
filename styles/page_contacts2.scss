@@ -7,8 +7,14 @@
     box-sizing: border-box;
 }
 
+.contacts {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .contacts__content-box {
     max-width: 1180px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +30,10 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    @media (max-width:480px) {
+        align-items: center;
+    }
+
 }
 
 .contacts__list-box {
@@ -70,6 +80,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    @media (max-width: 480px){
+        align-items: center;
+    }     
 }
 
 .contacts__title {
@@ -89,7 +102,9 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-top: 10px;
+    gap: 10px;
 }
 
 .contacts__letter-box {
@@ -97,11 +112,13 @@
     flex-direction: column;
     align-items: flex-start;
     margin-right: 135px;
+    padding-left: 33px;
     gap: 20px;
     @media (max-width: 480px){
         margin: 0 auto;
-    }   
-    
+        align-items: center;
+        padding-left: 0px;
+    }     
 }
 
 .contacts__post-box {
@@ -119,12 +136,28 @@
 .contacts-title {
     @include text-styles ($mainFont, 26px, 700, 160%, 1);
         color: #2D2D2D;
-    
 }
+
+.contacts__title-h2 {
+    align-self: flex-start; 
+    @include text-styles ($mainFont, 90px, 600, normal, 0);
+        color: #2D2D2D;
+        @media (min-width:768px) and (max-width:991px) {
+            font-size: 60px;
+        }
+        @media (min-width:481px) and (max-width:768px) {
+            font-size: 50px;
+        }
+        @media (max-width:480px)  {
+            align-self: center;
+            font-size: 40px;
+        }
+    }
+
 
 .contacts__social-name {
     @include text-styles ($mainFont, 22px, 500, 160%, 2);
-        color: #505050;
+        color: #505050;  
 }  
 
 .location {
@@ -137,6 +170,13 @@
     @include text-styles ($mainFont, 22px, 500, 160%, 2);
     color: #2D2D2D;
 }
+
+.post-address {
+    @media (max-width:480px)  {
+        display: none;
+    }  
+}
+
 a {
     text-decoration: none;
     cursor: pointer;
