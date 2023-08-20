@@ -45,14 +45,15 @@
 .picture__main {
     display: flex;
     justify-content: center;
-    width: 100%;
-    min-height: 100%;
     margin-top: 40px;
+    width: 600px;
+    margin: 0 auto;
 }
 
 .pict-main {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .btn__descr .btn_green {
