@@ -798,7 +798,7 @@ iframe {
 }
 @media (max-width: 480px) {
   iframe {
-    width: 300px;
+    width: 238px;
     height: 170px;
   }
 }
@@ -824,6 +824,11 @@ iframe {
   color: #505050;
   text-align: center;
   max-width: 770px;
+}
+@media (max-width: 480px) {
+  .video__description {
+    max-width: 250px;
+  }
 }
 
 .articles {

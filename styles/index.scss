@@ -652,7 +652,7 @@ iframe {
     }
 
     @media (max-width: 480px) {
-        width: 300px;
+        width: 238px;
         height: 170px;
     }
 }
@@ -670,6 +670,10 @@ iframe {
     color: $secondaryFontColor;
     text-align: center;
     max-width: 770px;
+    @media (max-width: 480px) {
+        max-width: 250px;
+    }
+    
 }
 
 //Заканчиваются стили для раздела "Видео"
