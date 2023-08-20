@@ -66,8 +66,8 @@
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #808080;;
+    border-bottom: 1px solid #808080;;
     margin-top: 30px;
     margin-bottom: 30px;
     @media (min-width: 481px) and (max-width: 767px) {
@@ -585,16 +585,13 @@
 //Заканчиваются стили для раздела "Мероприятия"
 
 //Начинаются стили для раздела "Видео"
-.video {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .container-video {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
@@ -633,10 +630,11 @@
     align-items: center;
     flex-direction: column;
     max-width: 1180px;
+    margin: 0 auto;
 }
 
 iframe {
-    width: 1180px;
+    width: 933px;
     height: 680px;
     padding: 20px;
     border: none;
@@ -663,7 +661,11 @@ iframe {
     text-align: center;
     padding: 50px;
     max-width: 770px;
+    @media (max-width: 480px) {
+        padding: 0px;}
 }
+
+
 
 .video__description {
     @include text-styles ($mainFont, 20px, 400, 30px, 0px);
@@ -671,7 +673,7 @@ iframe {
     text-align: center;
     max-width: 770px;
     @media (max-width: 480px) {
-        max-width: 250px;
+        max-width: 209px;
     }
     
 }
@@ -721,7 +723,18 @@ iframe {
 }
 
 .articles__h2 {
-    @include text-styles ($mainFont, 96px, 600, normal, 0px);
+    @include text-styles ($mainFont, 90px, 600, normal, 0px);
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 60px;
+    }
+    @media (min-width:481px) and (max-width:768px) {
+        font-size: 50px;
+    }
+    @media (max-width:480px)  {
+        align-self: center;
+        font-size: 50px;
+    }
+
 }
 
 .link__articles-btn {
@@ -1044,6 +1057,8 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
@@ -1083,8 +1098,9 @@ footer {
 .container-menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     align-items: center;
+    max-width: 1180px;
+    margin: 50px auto;
 
     @media (min-width: 768px) and (max-width: 991px) {
         display: flex;
