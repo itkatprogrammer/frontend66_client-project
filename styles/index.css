@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.top-line__menu .menu_link:hover {
+  background-color: rgba(120, 189, 148, 0.34);
+  transition: all 0.6s ease;
+}
+
 @media (min-width: 1449px) {
   .top-line__title-index {
     display: none;
@@ -65,8 +70,8 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -402,7 +407,6 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .events-container {
-    flex-direction: column;
     align-items: center;
     gap: 50px;
   }
@@ -431,7 +435,7 @@
 
 .events__title {
   font-family: "Arsenal", sans-serif;
-  font-size: 96px;
+  font-size: 90px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0;
@@ -720,16 +724,12 @@
   }
 }
 
-.video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .container-video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .container-video {
@@ -776,10 +776,11 @@
   align-items: center;
   flex-direction: column;
   max-width: 1180px;
+  margin: 0 auto;
 }
 
 iframe {
-  width: 1180px;
+  width: 933px;
   height: 680px;
   padding: 20px;
   border: none;
@@ -814,6 +815,11 @@ iframe {
   padding: 50px;
   max-width: 770px;
 }
+@media (max-width: 480px) {
+  .video__subtitle {
+    padding: 0px;
+  }
+}
 
 .video__description {
   font-family: "Arsenal", sans-serif;
@@ -827,7 +833,7 @@ iframe {
 }
 @media (max-width: 480px) {
   .video__description {
-    max-width: 250px;
+    max-width: 209px;
   }
 }
 
@@ -874,10 +880,26 @@ iframe {
 
 .articles__h2 {
   font-family: "Arsenal", sans-serif;
-  font-size: 96px;
+  font-size: 90px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__h2 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .articles__h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__h2 {
+    align-self: center;
+    font-size: 50px;
+  }
 }
 
 .link__articles-btn .btn_white {
@@ -1252,6 +1274,8 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .container-logo {
@@ -1295,8 +1319,9 @@ footer {
 .container-menu {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
   align-items: center;
+  max-width: 1180px;
+  margin: 50px auto;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container-menu {
