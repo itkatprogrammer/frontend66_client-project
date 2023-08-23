@@ -16,19 +16,68 @@
   flex-direction: column;
   align-items: center;
   gap: 52px;
-  margin-top: 60px;
+  margin-top: 35px;
   margin-bottom: 60px;
+}
+@media (max-width: 480px) {
+  .contacts__content-box {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .contacts__content-box {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts__content-box {
+    margin-top: 15px;
+  }
+}
+
+.contacts__border-box {
+  background: #a0d3b2;
+  padding: 35px 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border: 1px solid #bebcbc;
+}
+@media (max-width: 480px) {
+  .contacts__border-box {
+    padding: 26px 21px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__border-box {
+    padding: 25px 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts__border-box {
+    padding: 35px 42px;
+  }
 }
 
 .contacts__socials-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  border: 1px solid #bebcbc;
+  background: #FFF;
+  padding: 11px 52px;
 }
 @media (max-width: 480px) {
   .contacts__socials-box {
     align-items: center;
+    padding: 5px 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__socials-box {
+    align-items: center;
+    padding: 11px 0px;
   }
 }
 
@@ -42,11 +91,15 @@
     gap: 8px;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__list-box {
+    gap: 50px;
+  }
+}
 
 .contacts__social-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 @media (max-width: 480px) {
   .contacts__social-list {
@@ -58,6 +111,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media (max-width: 480px) {
+  .contacts__social-card {
+    flex-direction: column;
+  }
 }
 
 .boosty-icon {
@@ -78,9 +136,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  border: 1px solid #bebcbc;
+  background: #FFF;
+  padding: 11px 52px;
 }
 @media (max-width: 480px) {
+  .contacts__support-box {
+    align-items: center;
+    padding: 5px 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
   .contacts__support-box {
     align-items: center;
   }
@@ -101,6 +168,11 @@
     gap: 23px;
   }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__support-list-box {
+    gap: 50px;
+  }
+}
 
 .contacts__support-card {
   display: flex;
@@ -110,20 +182,41 @@
   padding-top: 10px;
   gap: 10px;
 }
+@media (max-width: 480px) {
+  .contacts__support-card {
+    flex-direction: column;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__support-card {
+    align-items: center;
+  }
+}
 
 .contacts__letter-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-right: 135px;
   padding-left: 33px;
-  gap: 20px;
+  gap: 10px;
+  border: 1px solid #bebcbc;
+  background: #FFF;
+  padding: 11px 52px;
 }
 @media (max-width: 480px) {
   .contacts__letter-box {
     margin: 0 auto;
     align-items: center;
-    padding-left: 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__letter-box {
+    align-items: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .contacts__letter-box {
+    align-items: center;
   }
 }
 
@@ -150,27 +243,36 @@
 
 .contacts__title-h2 {
   align-self: flex-start;
+  text-align: center;
+  margin-top: 20px;
   font-family: "Arsenal", sans-serif;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0;
   color: #2D2D2D;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1449px) {
   .contacts__title-h2 {
-    font-size: 60px;
+    font-size: 55px;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .contacts__title-h2 {
-    font-size: 50px;
+    font-size: 45px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__title-h2 {
+    font-size: 45px;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
   .contacts__title-h2 {
-    align-self: center;
-    font-size: 40px;
+    text-align: center;
+    font-size: 45px;
+    margin-top: 15px;
   }
 }
 
@@ -191,6 +293,11 @@
   letter-spacing: 2;
   color: #2D2D2D;
 }
+@media (max-width: 480px) {
+  .location {
+    text-align: center;
+  }
+}
 
 .contacts__post-box {
   font-family: "Arsenal", sans-serif;
@@ -199,6 +306,11 @@
   line-height: 160%;
   letter-spacing: 2;
   color: #2D2D2D;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contacts__post-box {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 480px) {
