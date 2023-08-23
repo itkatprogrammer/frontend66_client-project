@@ -76,7 +76,8 @@
     margin: 20px 0px 40px 0px;
     max-width: 800px;
     max-height: 500px;
-    border: 1px solid #2D2D2D;    
+    border: 1px solid #ebebeb;;  
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);  
     @media (max-width: 480px) {
         max-width: 450px;
         max-height: none;
@@ -101,8 +102,8 @@
 
 .welcome__light-box {
     background: rgba(255, 255, 255, 1);
-    padding: 20px 40px 30px 40px;
-    border-bottom: 1px solid #2D2D2D;;
+    padding: 30px 40px 30px 40px;
+    border-bottom: 1px solid #ebebeb;
     @media (max-width: 480px) {
         max-height: unset;
         padding: 9px 25px 35px 7px;
@@ -178,8 +179,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding-left: 51px;
         padding-right: 51px;
         min-width: 644px;
