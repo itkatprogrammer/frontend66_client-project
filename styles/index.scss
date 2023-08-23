@@ -14,7 +14,7 @@
 
 
 .top-line__title-index {
-    @media (min-width: 1449px) {
+    @media (min-width: 1450px) {
         display: none;
     }
 
@@ -414,6 +414,7 @@
 .events__second:hover,
 .events__third:hover {
     background-color: rgba(120, 189, 148, 0.34);
+    transition: all 0.6s ease;
 }
 
 .event-container {
@@ -1030,139 +1031,3 @@ iframe {
 }
 
 //Заканчиваются стили для раздела "Статьи" Катя
-
-//Начинаются стили для футера
-
-footer {
-    background-color: #F1F1F1;
-    height: 302px;
-    padding-top: 70px;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        height: 450px;
-        padding-top: 50px;
-    }
-
-    @media (max-width: 480px) {
-        height: 450px;
-        padding-top: 50px;
-    }
-
-    @media (max-width: 300px) {
-        height: 400px;
-        padding-top: 30px;
-    }
-}
-
-.footer-container {
-    max-width: 1180px;
-    margin: 0px auto;
-}
-
-.container-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
-    margin: 0 auto;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-.footer__logo {
-    @include text-styles ($mainFont, 24px, 600, 24px, 0);
-    color: $mainFontColor;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    #footer-logo {
-        height: 45px;
-    }
-}
-
-.footer__icons {
-    display: flex;
-    gap: 20px;
-}
-
-.footer__icon {
-    height: 24px;
-}
-
-
-.container-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
-    margin: 50px auto;
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 40px;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 30px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 20px;
-    }
-}
-
-.copyright {
-    @include text-styles ($mainFont, 18px, 400, normal, 0);
-    color: $secondaryFontColor;
-
-    @media (max-width: 300px) {
-        font-size: 14px;
-    }
-}
-
-.footer__menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-.footer__menu a {
-    @include text-styles ($mainFont, 18px, 400, normal, 0);
-    text-decoration: none;
-    color: $secondaryFontColor;
-    display: flex;
-    gap: 30px;
-}
-
-//Заканчиваются стили для футера
