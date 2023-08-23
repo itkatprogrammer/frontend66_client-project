@@ -8,7 +8,6 @@
 }
 
 .contacts {
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -34,7 +33,7 @@
 
 .contacts__border-box {
     background: #a0d3b2;
-    padding: 35px 46px;
+    padding: 16px 19px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -201,10 +200,11 @@
         color: #2D2D2D;
 }
 
-.contacts__title-h2 {
+.contacts__title-h3 {
     align-self: flex-start; 
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1px;
+    background-color: #F1F1F1;
     @include text-styles ($mainFont, 70px, 600, normal, 0);
         color: #2D2D2D;
         @media (min-width:992px) and (max-width:1449px) {
@@ -220,7 +220,6 @@
         @media (max-width:480px)  {
             text-align: center;
             font-size: 45px;
-            margin-top: 15px;
         }
     }
 

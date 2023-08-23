@@ -12,6 +12,7 @@ $secondaryFontColor: #505050;
 
 .articles__main {
     margin: 0 auto;
+    max-width: 1180px;
     padding: 100px 130px;
 
     @media (max-width: 300px) {
@@ -33,6 +34,31 @@ $secondaryFontColor: #505050;
         padding: 30px 50px;
     }
 }
+
+
+.articles__title-h3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 1px;
+    background-color: #F1F1F1;
+    @include text-styles ($mainFont, 70px, 600, normal, 0);
+        color: #2D2D2D;
+        @media (min-width:992px) and (max-width:1449px) {
+            font-size: 55px;
+        }
+        @media (min-width:768px) and (max-width:991px) {
+            font-size: 45px;
+        }
+        @media (min-width:481px) and (max-width:767px) {
+            font-size: 45px;
+            text-align: center;
+        }
+        @media (max-width:480px)  {
+            text-align: center;
+            font-size: 45px;
+        }
+    }
 
 .articles__container {
     display: grid;

@@ -67,12 +67,6 @@
     display: flex;
     justify-content: center;
     border-top: 1px solid #808080;;
-    border-bottom: 1px solid #808080;;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding-bottom: 25px;
-    }   
 }
 
 .welcome__card {
@@ -82,7 +76,7 @@
     margin: 20px 0px 40px 0px;
     max-width: 800px;
     max-height: 500px;
-    
+    border: 1px solid #2D2D2D;    
     @media (max-width: 480px) {
         max-width: 450px;
         max-height: none;
@@ -108,6 +102,7 @@
 .welcome__light-box {
     background: rgba(255, 255, 255, 1);
     padding: 20px 40px 30px 40px;
+    border-bottom: 1px solid #2D2D2D;;
     @media (max-width: 480px) {
         max-height: unset;
         padding: 9px 25px 35px 7px;
@@ -165,7 +160,7 @@
 .welcome__dark-box {
     display: flex;
     align-items: center;
-    background-color: rgba(30, 44, 48, 1);
+    background-color: rgb(160 211 178);
     max-height: 122px;
     justify-content: center;
     width: 100%;
@@ -252,7 +247,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #2D2D2D;
     min-width: 138px;
     justify-content: space-evenly;
     @media (max-width: 480px) {

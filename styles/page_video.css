@@ -15,6 +15,42 @@
   margin-top: 100px;
 }
 
+.video__title-h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1px;
+  background-color: #F1F1F1;
+  font-family: "Arsenal", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #2D2D2D;
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .video__title-h3 {
+    font-size: 55px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .video__title-h3 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .video__title-h3 {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .video__title-h3 {
+    text-align: center;
+    font-size: 45px;
+  }
+}
+
 .video__description {
   font-family: "Arsenal", sans-serif;
   font-size: 20px;
