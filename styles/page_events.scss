@@ -1,40 +1,58 @@
 @import "variables";
 @import "mixins";
 
+.main {
+    margin-bottom: 60px;
+}
+
 .header__main {
     font-family: $mainFont;
     color: #2d2d2d;
-
-    font-size: 96px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin: 2vw 0;
+    max-width: 1180px;
+    margin: auto;
+    margin-bottom: 15px;
+    @media (min-width:992px) and (max-width:1449px) {
+        font-size: 45px;
+    }
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 35px;
+    }
+    @media (min-width:481px) and (max-width:767px) {
+        font-size: 35px;
+    }
+    @media (max-width:480px)  {
+        font-size: 35px;
+    }
 }
 
 .events__title-h3 {
-    display: flex;
     text-align: center;
-    justify-content: center;
     margin-top: 1px;
     background-color: #F1F1F1;
+    margin-bottom: 100px;
     @include text-styles ($mainFont, 70px, 600, normal, 0);
         color: #2D2D2D;
         @media (min-width:992px) and (max-width:1449px) {
             font-size: 55px;
+            margin-bottom: 60px;
         }
         @media (min-width:768px) and (max-width:991px) {
             font-size: 45px;
+            margin-bottom: 30px;
         }
         @media (min-width:481px) and (max-width:767px) {
             font-size: 45px;
-            text-align: center;
+            margin-bottom: 30px;
         }
         @media (max-width:480px)  {
-            text-align: center;
             font-size: 45px;
+            margin-bottom: 30px;
         }
-    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .header__main {
@@ -64,10 +82,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     margin-top: 80px;
     max-width: 1180px;
     margin: 0 auto;
+    margin-bottom: 60px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -151,8 +169,8 @@
     display: flex;
     flex-direction: column;
 
-    border-top: 2px solid #505050;
-    border-bottom: 2px solid #505050;
+    border-top: 2px solid #C7C7C7;;
+    border-bottom: 2px solid #C7C7C7;;
     margin: 0 2vw;
 }
 
@@ -269,8 +287,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-
-    margin: 5vw 0;
+    max-width: 1180px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -297,18 +316,18 @@
 
 
 .wrapper {
+    max-width: 1180px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5vw;
-    margin: 5vw;
+    gap: 60px;
+    margin: auto;
+
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 5vw;
-
         max-height: calc(95vh);
         overflow-x: hidden;
         overflow-y: auto;
@@ -319,8 +338,6 @@
     .wrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 5vw;
-
         max-height: calc(95vh);
         overflow-x: hidden;
         overflow-y: auto;
@@ -331,8 +348,6 @@
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 5vw;
-
     }
 }
 
@@ -342,9 +357,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    border-bottom: 2px solid #505050;
-    margin-bottom: 50px;
+    border-bottom: 2px solid #C7C7C7;;
 }
 
 .wrapper__col:hover {
@@ -357,7 +370,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 45px 0;
     }
 
     .wrapper__col:first-child {
@@ -368,6 +380,7 @@
         padding-top: 0;
     }
 }
+
 
 .picture__wrap {
     z-index: -1;
@@ -384,7 +397,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin: 2vw 0.5vw;
+    margin: 1vw 0.5vw;
 }
 
 .header__wrap {
@@ -406,7 +419,7 @@
     font-weight: 400;
     line-height: 30px;
     text-align: center;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

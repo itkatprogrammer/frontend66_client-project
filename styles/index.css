@@ -117,7 +117,6 @@
 @media (max-width: 480px) {
   .welcome__light-box {
     max-height: unset;
-    padding: 9px 25px 35px 7px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -168,6 +167,7 @@
 @media (max-width: 480px) {
   .welcome__content .welcome__general-text {
     margin: 18px 0px 18px 0px;
+    text-align: center;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -927,6 +927,7 @@ iframe {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(434px, 1fr));
     max-width: none;
+    gap: 15px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -942,6 +943,7 @@ iframe {
     flex-direction: column;
     align-items: center;
     min-width: auto;
+    gap: 10px;
   }
 }
 
