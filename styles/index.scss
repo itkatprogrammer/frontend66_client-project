@@ -344,21 +344,15 @@
 .events__title {
     @include text-styles ($mainFont, 90px, 600, normal, 0);
     color: $mainFontColor;
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 70px;
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 75px;
     }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 70px;
+    @media (min-width:481px) and (max-width:768px) {
+        font-size: 60px;
     }
-
-    @media (max-width: 480px) {
-        font-size: 50px;
-    }
-
-    @media (max-width: 300px) {
-        font-size: 40px;
+    @media (max-width:480px)  {
+        align-self: center;
+        font-size: 46px;
     }
 }
 
@@ -395,6 +389,17 @@
 
 .events__first {
     margin-bottom: 100px;   
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-bottom: 70px; 
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-bottom: 60px; 
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 45px;  
+    }
 }
 
 .events__second,
@@ -409,6 +414,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 70px; 
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 60px; 
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 45px;  
+    }
 }
 
 .events__first:hover,
@@ -617,6 +633,16 @@
 .video__title {
     @include text-styles ($mainFont, 90px, 600, normal, 0px);
     color: $mainFontColor;
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 75px;
+    }
+    @media (min-width:481px) and (max-width:768px) {
+        font-size: 60px;
+    }
+    @media (max-width:480px)  {
+        align-self: center;
+        font-size: 50px;
+    }
 }
 
 .video__line {
@@ -735,10 +761,10 @@ iframe {
 .articles__h2 {
     @include text-styles ($mainFont, 90px, 600, normal, 0px);
     @media (min-width:768px) and (max-width:991px) {
-        font-size: 60px;
+        font-size: 75px;
     }
     @media (min-width:481px) and (max-width:768px) {
-        font-size: 50px;
+        font-size: 60px;
     }
     @media (max-width:480px)  {
         align-self: center;
