@@ -670,24 +670,33 @@
 }
 
 iframe {
-    width: 933px;
-    height: 680px;
+    min-width: 895px;
+    min-height: 524px;
+    object-fit: cover;
     padding: 20px;
     border: none;
 
     @media (min-width: 768px) and (max-width: 991px) {
-        width: 600px;
-        height: 340px;
+        min-width: 718px;
+        height: 387px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        width: 430px;
-        height: 210px;
+        min-width: 453px;
+        min-height: 308px;
     }
 
-    @media (max-width: 480px) {
-        width: 238px;
-        height: 170px;
+    @media (min-width: 296px) and (max-width:480px) {
+        max-width: 332px;
+    max-height: 384px;
+    min-width: 214px;
+    min-height: 288px;
+    }
+    @media (max-width: 295px) {
+        max-width: 265px;
+        max-height: 206px;
+        min-width: auto;
+        min-height: auto;
     }
 }
 
