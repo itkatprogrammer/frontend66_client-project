@@ -871,10 +871,20 @@ iframe {
   letter-spacing: 0px;
   color: #2d2d2d;
   text-align: center;
-  padding: 50px;
+  padding: 25px;
   max-width: 770px;
 }
 @media (max-width: 480px) {
+  .video__subtitle {
+    padding: 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .video__subtitle {
+    padding: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
   .video__subtitle {
     padding: 0px;
   }
@@ -893,6 +903,17 @@ iframe {
 @media (max-width: 480px) {
   .video__description {
     max-width: none;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .video__description {
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .video__description {
+    margin-top: 20px;
   }
 }
 
