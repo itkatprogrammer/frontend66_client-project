@@ -70,7 +70,7 @@
 }
 
 .about__welcome {
-    @include text-styles ($mainFont, 26px, 700, 160%, 1);
+    @include text-styles ($mainFont, 32px, 700, 160%, 1);
     text-align: center;
     color: #2D2D2D;
     margin-bottom: 15px;
