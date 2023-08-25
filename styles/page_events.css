@@ -5,7 +5,7 @@
 .header__main {
   font-family: "Arsenal", sans-serif;
   color: #2d2d2d;
-  font-size: 60px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -20,17 +20,20 @@
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .header__main {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .header__main {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 }
 @media (max-width: 480px) {
   .header__main {
-    font-size: 35px;
+    font-size: 32px;
+    text-align: center;
   }
 }
 
@@ -71,26 +74,6 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .header__main {
-    font-size: 60px;
-    text-align: center;
-    margin: 5vw 0;
-  }
-}
-@media (min-width: 481px) and (max-width: 767px) {
-  .header__main {
-    font-size: 50px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 481px) {
-  .header__main {
-    font-size: 40px;
-    text-align: center;
-    margin: 5vw 0;
-  }
-}
 .advt_row {
   display: flex;
   flex-direction: row;
@@ -207,7 +190,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .header__descr {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -274,7 +257,7 @@
 .header-wrapper {
   font-family: "Arsenal", sans-serif;
   color: #505050;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
