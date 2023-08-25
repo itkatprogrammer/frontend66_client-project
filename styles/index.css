@@ -892,7 +892,7 @@ iframe {
 }
 @media (max-width: 480px) {
   .video__description {
-    max-width: 209px;
+    max-width: none;
   }
 }
 
