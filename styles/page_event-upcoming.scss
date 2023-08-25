@@ -6,6 +6,11 @@
 // Header (end code)
 
 // Content (start code)
+.main__event {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
 .wrap_event {
     display: flex;
     flex-direction: column;
@@ -21,24 +26,27 @@
     font-weight: 600;
     line-height: normal;
     text-align: center;
-    margin: 5vw 0;
+    margin: 60px 0 15px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .header__descr {
         font-size: 36px;
+        margin: 30px 0 15px;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     .header__descr {
         font-size: 30px;
+        margin: 30px 0 15px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header__descr {
         font-size: 24px;
+        margin: 30px 0 15px;
     }
 }
 
@@ -46,8 +54,10 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    width: 600px;
+    min-width: 197px;
+    max-width: 550px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .pict-main {
@@ -109,8 +119,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
-
-    margin-top: 5vw;
+    margin-top: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -119,15 +128,13 @@
         text-align: center;
     }
 }
-
 @media (min-width: 481px) and (max-width: 767px) {
     .text__descr {
         font-size: 20px;
         text-align: center;
     }
 }
-
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
     .text__descr {
         font-size: 18px;
         text-align: center;
@@ -135,13 +142,25 @@
 }
 
 .container_btn {
-    margin: 5vw auto;
-
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
     margin-top: 50px;
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-bottom: 30px;
+        margin-top: 30px;  
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    }
 }
+
 
 .container_btn .btn_green {
     width: 100%;
