@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
-  width: 600px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -44,6 +44,14 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.pict-descr {
+  font-family: "Arsenal", sans-serif;
+  color: #505050;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .btn__descr .btn_green {
