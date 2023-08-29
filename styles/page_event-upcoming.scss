@@ -54,8 +54,7 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    min-width: 197px;
-    max-width: 550px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 30px;
 }
@@ -65,6 +64,15 @@
     height: 100%;
     object-fit: cover;
 }
+
+.pict-descr {
+    font-family: $mainFont;
+    color: #505050;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
 
 .btn__descr .btn_green {
 
@@ -128,12 +136,14 @@
         text-align: center;
     }
 }
+
 @media (min-width: 481px) and (max-width: 767px) {
     .text__descr {
         font-size: 20px;
         text-align: center;
     }
 }
+
 @media screen and (max-width: 480px) {
     .text__descr {
         font-size: 18px;
@@ -147,17 +157,20 @@
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
+
     @media (min-width: 768px) and (max-width: 991px) {
         margin-bottom: 30px;
-        margin-top: 30px;  
+        margin-top: 30px;
     }
+
     @media (min-width: 481px) and (max-width: 767px) {
         margin-bottom: 20px;
         margin-top: 20px;
     }
+
     @media screen and (max-width: 480px) {
-    margin-bottom: 20px;
-    margin-top: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
 }
 
