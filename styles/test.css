@@ -26,13 +26,13 @@
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .header__main {
-    font-size: 12px;
+    font-size: 92px;
     text-align: center;
   }
 }
 @media (max-width: 480px) {
   .header__main {
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -64,6 +64,13 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .events__title-h3 {
     font-size: 45px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .events__title-h3 {
+    font-size: 45px;
+    margin-bottom: 40px;
     margin-bottom: 20px;
   }
 }
@@ -160,8 +167,6 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .descr {
     align-items: center;
-    margin-top: 5vw;
-    text-align: center;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
@@ -180,12 +185,12 @@
 }
 .header__descr {
   font-family: "Arsenal", sans-serif;
-  color: #2d2d2d;
-  font-size: 36px;
+  color: #a74141;
+  font-size: 66px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
