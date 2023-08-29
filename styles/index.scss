@@ -7,14 +7,9 @@
     box-sizing: border-box;
 }
 
-.top-line__menu .menu_link:hover {
-    background-color: rgba(120, 189, 148, 0.34);
-    transition: all 0.6s ease;
-}
-
 
 .top-line__title-index {
-    @media (min-width: 1449px) {
+    @media (min-width: 1450px) {
         display: none;
     }
 
@@ -72,12 +67,6 @@
     display: flex;
     justify-content: center;
     border-top: 1px solid #808080;;
-    border-bottom: 1px solid #808080;;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    @media (min-width: 481px) and (max-width: 767px) {
-        padding-bottom: 25px;
-    }   
 }
 
 .welcome__card {
@@ -87,7 +76,8 @@
     margin: 20px 0px 40px 0px;
     max-width: 800px;
     max-height: 500px;
-    
+    border: 1px solid #ebebeb;;  
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.3);  
     @media (max-width: 480px) {
         max-width: 450px;
         max-height: none;
@@ -95,7 +85,7 @@
     @media (min-width: 481px) and (max-width: 767px) {
         max-width: 450px;
         max-height: none;
-        margin: 0;
+        margin: 20px 0px 40px 0px;
     }
     @media (min-width: 768px) and (max-width: 991px) {
         max-width: 645px;
@@ -112,10 +102,10 @@
 
 .welcome__light-box {
     background: rgba(255, 255, 255, 1);
-    padding: 20px 40px 30px 40px;
+    padding: 30px 40px 30px 40px;
+    border-bottom: 1px solid #ebebeb;
     @media (max-width: 480px) {
         max-height: unset;
-        padding: 9px 25px 35px 7px;
     }
     @media (min-width: 481px) and (max-width: 767px) {
         padding: 20px 40px 16px 40px;
@@ -149,6 +139,7 @@
         color: #505050;
         @media (max-width:480px) {
             margin: 18px 0px 18px 0px;
+            text-align: center;
         }  
         @media (min-width:481px) and (max-width:767px) {
             margin: 26px 0px 7px 0px; 
@@ -170,7 +161,7 @@
 .welcome__dark-box {
     display: flex;
     align-items: center;
-    background-color: rgba(30, 44, 48, 1);
+    background-color: rgb(160 211 178);
     max-height: 122px;
     justify-content: center;
     width: 100%;
@@ -188,8 +179,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding-left: 51px;
         padding-right: 51px;
         min-width: 644px;
@@ -257,7 +248,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #2D2D2D;
     min-width: 138px;
     justify-content: space-evenly;
     @media (max-width: 480px) {
@@ -322,6 +313,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @media (min-width: 768px) and (max-width: 991px) {
         align-items: center;
@@ -331,19 +324,19 @@
     @media (min-width: 481px) and (max-width: 767px) {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     @media (max-width: 480px) {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
     }
 
     @media (max-width: 300px) {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
     }
 }
 
@@ -351,28 +344,21 @@
 .events__title {
     @include text-styles ($mainFont, 90px, 600, normal, 0);
     color: $mainFontColor;
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        font-size: 70px;
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 75px;
     }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        font-size: 70px;
+    @media (min-width:481px) and (max-width:768px) {
+        font-size: 60px;
     }
-
-    @media (max-width: 480px) {
-        font-size: 50px;
-    }
-
-    @media (max-width: 300px) {
-        font-size: 40px;
+    @media (max-width:480px)  {
+        align-self: center;
+        font-size: 46px;
     }
 }
 
 .events__first,
 .events__second,
 .events__third {
-    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -401,6 +387,29 @@
     }
 }
 
+.events__first {
+    margin-bottom: 100px;   
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-bottom: 70px;
+        margin-top: 0px; 
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-bottom: 60px;
+        margin-top: 0px;  
+    }
+
+    @media (max-width: 480px) {
+        margin-bottom: 45px;  
+        margin-top: 0px; 
+    }
+}
+
+.events__second,
+.events__third {
+    margin-top:0px;
+}
+
 .events__third {
     margin-bottom: 150px;
     margin-top: 100px;
@@ -408,12 +417,24 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 70px; 
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 60px; 
+    }
+
+    @media (max-width: 480px) {
+        margin-top: 45px;  
+    }
 }
 
 .events__first:hover,
 .events__second:hover,
 .events__third:hover {
     background-color: rgba(120, 189, 148, 0.34);
+    transition: all 0.6s ease;
 }
 
 .event-container {
@@ -424,7 +445,7 @@
     border-top: 1px solid #000000;
     border-bottom: 1px solid #000000;
     max-width: 640px;
-    min-width: 409px;
+    min-width: 383px;
 
     @media (min-width: 768px) and (max-width: 991px) {
         min-width: auto;
@@ -596,35 +617,52 @@
     align-items: center;
     max-width: 1180px;
     margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     @media (min-width: 481px) and (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 10px;
+        padding-bottom: 0px;
+        padding-top: 10px;
     }
 
     @media (max-width: 480px) {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 10px;
+        padding-bottom: 0px;
+        padding-top: 10px;
     }
 }
 
 .video__title {
     @include text-styles ($mainFont, 90px, 600, normal, 0px);
     color: $mainFontColor;
+    @media (min-width:768px) and (max-width:991px) {
+        font-size: 75px;
+    }
+    @media (min-width:481px) and (max-width:768px) {
+        font-size: 60px;
+    }
+    @media (max-width:480px)  {
+        align-self: center;
+        font-size: 50px;
+    }
 }
 
 .video__line {
     max-width: 1180px;
-    margin: 50px auto;
+    margin: auto;
+    margin-bottom: 50px;
 
     @media (min-width: 481px) and (max-width: 767px) {
-        margin: 50px auto;
+        margin: 30px auto;
     }
 
     @media (max-width: 480px) {
-        margin: 50px auto;
+        margin: 25px auto;
     }
 }
 
@@ -635,27 +673,46 @@
     flex-direction: column;
     max-width: 1180px;
     margin: 0 auto;
+    margin-bottom: 50px;
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-bottom: 0px;
+    }  
+    @media (max-width: 480px) {
+        margin-bottom: 0px;
+    }
 }
 
 iframe {
-    width: 933px;
-    height: 680px;
+    min-width: 895px;
+    min-height: 524px;
+    object-fit: cover;
     padding: 20px;
     border: none;
 
     @media (min-width: 768px) and (max-width: 991px) {
-        width: 600px;
-        height: 340px;
+        min-width: 718px;
+        height: 387px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
-        width: 430px;
-        height: 210px;
+        min-width: 453px;
+        min-height: 308px;
+        padding: 0px 20px;
     }
 
-    @media (max-width: 480px) {
-        width: 238px;
-        height: 170px;
+    @media (min-width: 296px) and (max-width:480px) {
+        max-width: 332px;
+    max-height: 384px;
+    min-width: 214px;
+    min-height: 288px;
+    padding: 0px 20px;
+    }
+    @media (max-width: 295px) {
+        max-width: 265px;
+        max-height: 206px;
+        min-width: auto;
+        min-height: auto;
+        padding: 0px 20px;  
     }
 }
 
@@ -663,10 +720,17 @@ iframe {
     @include text-styles ($mainFont, 32px, 600, normal, 0px);
     color: $mainFontColor;
     text-align: center;
-    padding: 50px;
+    padding: 25px;
     max-width: 770px;
     @media (max-width: 480px) {
-        padding: 0px;}
+        padding: 0px;
+    }
+    @media (min-width: 481px) and (max-width: 767px) {
+        padding: 0px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        padding: 0px;
+    }    
 }
 
 
@@ -677,8 +741,15 @@ iframe {
     text-align: center;
     max-width: 770px;
     @media (max-width: 480px) {
-        max-width: 209px;
+        max-width: none;
+        margin-top: 10px;
     }
+    @media (min-width: 481px) and (max-width: 767px) {
+        margin-top: 15px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        margin-top: 20px;
+    }    
     
 }
 
@@ -729,10 +800,10 @@ iframe {
 .articles__h2 {
     @include text-styles ($mainFont, 90px, 600, normal, 0px);
     @media (min-width:768px) and (max-width:991px) {
-        font-size: 60px;
+        font-size: 75px;
     }
     @media (min-width:481px) and (max-width:768px) {
-        font-size: 50px;
+        font-size: 60px;
     }
     @media (max-width:480px)  {
         align-self: center;
@@ -767,6 +838,7 @@ iframe {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(434px, 1fr));
         max-width: none;
+        gap: 15px;
     }
 
     @media (min-width: 481px) and (max-width: 767px) {
@@ -780,6 +852,7 @@ iframe {
         flex-direction: column;
         align-items: center;
         min-width: auto;
+        gap: 10px;
     }
 }
 
@@ -1013,6 +1086,7 @@ iframe {
 
 .articles__main-article:hover {
     background-color: rgba(120, 189, 148, 0.34);
+    transition: all 0.6s ease;
 
     .articles__main-pic-box {
         opacity: 0.8;
@@ -1021,6 +1095,7 @@ iframe {
 
 .articles__card:hover {
     background-color: rgba(120, 189, 148, 0.34);
+    transition: all 0.6s ease;
 
     .articles__pic-box {
         opacity: 0.8;
@@ -1028,139 +1103,3 @@ iframe {
 }
 
 //Заканчиваются стили для раздела "Статьи" Катя
-
-//Начинаются стили для футера
-
-footer {
-    background-color: #F1F1F1;
-    height: 302px;
-    padding-top: 70px;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        height: 450px;
-        padding-top: 50px;
-    }
-
-    @media (max-width: 480px) {
-        height: 450px;
-        padding-top: 50px;
-    }
-
-    @media (max-width: 300px) {
-        height: 400px;
-        padding-top: 30px;
-    }
-}
-
-.footer-container {
-    max-width: 1180px;
-    margin: 0px auto;
-}
-
-.container-logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
-    margin: 0 auto;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-}
-
-.footer__logo {
-    @include text-styles ($mainFont, 24px, 600, 24px, 0);
-    color: $mainFontColor;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    #footer-logo {
-        height: 45px;
-    }
-}
-
-.footer__icons {
-    display: flex;
-    gap: 20px;
-}
-
-.footer__icon {
-    height: 24px;
-}
-
-
-.container-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
-    margin: 50px auto;
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 40px;
-    }
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 30px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 30px;
-        gap: 20px;
-    }
-}
-
-.copyright {
-    @include text-styles ($mainFont, 18px, 400, normal, 0);
-    color: $secondaryFontColor;
-
-    @media (max-width: 300px) {
-        font-size: 14px;
-    }
-}
-
-.footer__menu {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-
-    @media (min-width: 481px) and (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    @media (max-width: 480px) {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-}
-
-.footer__menu a {
-    @include text-styles ($mainFont, 18px, 400, normal, 0);
-    text-decoration: none;
-    color: $secondaryFontColor;
-    display: flex;
-    gap: 30px;
-}
-
-//Заканчиваются стили для футера

@@ -16,9 +16,10 @@
     <link rel="shortcut icon" href="img/black_logo989to877.png" />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/template_top-line.css" />
-    <link rel="stylesheet" href="styles/template_btn.css" />
-    <link rel="stylesheet" href="styles/template_container-wrapper.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/template_container-wrapper.css" />
+    <link rel="stylesheet" href="styles/template_footer.css" />
+    <link rel="stylesheet" href="styles/template_btn.css" />
   </head>
 
   <body>
@@ -54,7 +55,7 @@
             <li>
               <a href="page_events.html" class="menu_link">Мероприятия</a>
             </li>
-            <li><a href="Page_contacts.html" class="menu_link">Контакты</a></li>
+            <li><a href="page_contacts.html" class="menu_link">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -99,302 +100,304 @@
     </header>
     <!--Здесь заканчивается хэдэр. Добавила Оксана -->
     <main>
-    <section class="welcome">
-      <div class="container-wrapper">
-        <div class="welcome__content-box">
-          <div class="welcome__card">
-            <div class="welcome__light-box">
-              <div class="welcome__content">
-                <p class="welcome__title">Дорогие подруги и друзья!</p>
-                <p class="welcome__general-text">
-                  Я рада приветствовать вас на сайте, посвященном веганским и
-                  критическим исследованиям животных. Здесь будут публиковаться
-                  переводы статей, отрывки из книг, подкастов, видео и других
-                  материалов о веганстве, этике животных, когнитивной этологии,
-                  поведенческой экологии, животных в литературе, праве и
-                  политике, а также многое другое.
-                </p>
-                <p class="welcome__welcome">Добро пожаловать!</p>
-              </div>
-            </div>
-
-            <div class="welcome__dark-box dark-box">
-              <div class="dark-box__content">
-                <div class="welcome__person-info person-info">
-                  <div class="person-info__text">
-                    <p class="person-name">Яна Фишова</p>
-                    <p class="person-status">Основательница проекта</p>
-                  </div>
+      <!--Здесь начинается раздел 'welcome'. Добавила Екатерина -->
+      <section class="welcome">
+        <div class="container-wrapper">
+          <div class="welcome__content-box">
+            <div class="welcome__card">
+              <div class="welcome__light-box">
+                <div class="welcome__content">
+                  <p class="welcome__title">Дорогие подруги и друзья!</p>
+                  <p class="welcome__general-text">
+                    Я рада приветствовать вас на сайте, посвященном веганским и
+                    критическим исследованиям животных. Здесь будут
+                    публиковаться переводы статей, отрывки из книг, подкастов,
+                    видео и других материалов о веганстве, этике животных,
+                    когнитивной этологии, поведенческой экологии, животных в
+                    литературе, праве и политике, а также многое другое.
+                  </p>
+                  <p class="welcome__welcome">Добро пожаловать!</p>
                 </div>
+              </div>
 
-                <div class="person-quote">
-                  <img src="img/icons/about_opinion-quotes.svg" alt="quote" />
+              <div class="welcome__dark-box dark-box">
+                <div class="dark-box__content">
+                  <div class="welcome__person-info person-info">
+                    <div class="person-info__text">
+                      <p class="person-name">Яна Фишова</p>
+                      <p class="person-status">Основательница проекта</p>
+                    </div>
+                  </div>
+
+                  <div class="person-quote">
+                    <img src="img/icons/about_opinion-quotes.svg" alt="quote" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--Здесь начинается раздел 'welcome'. Добавила Екатерина -->
+      </section>
+      <!--Здесь заканчивается раздел 'welcome'. Добавила Екатерина -->
 
-    <!--Здесь заканчивается раздел 'welcome'. Добавила Екатерина -->
-
-    <!--Здесь начинается раздел мероприятия. Добавила Дарья -->
-    <div class="container-wrapper events__wrapper">
-      <div class="events">
-        <div class="events-container">
-          <div class="events__title">Мероприятия</div>
-          <form action="page_events.html">
-            <button class="btn btn_green" type="submit">Смотреть все</button>
-          </form>
+      <!--Здесь начинается раздел мероприятия. Добавила Дарья -->
+      <div class="container-wrapper events__wrapper">
+        <div class="events">
+          <div class="events-container">
+            <div class="events__title">Мероприятия</div>
+            <form action="page_events.html">
+              <button class="btn btn_green" type="submit">Смотреть все</button>
+            </form>
+          </div>
+          <a href="page_event-upcoming.html" class="events__first">
+            <img
+              src="img/events_img1.png"
+              alt="poster1"
+              class="event__img event__img_shadow-right"
+            />
+            <div class="event-container">
+              <div class="event">
+                Онлайн конференция "Веганская интерсекциональность"
+              </div>
+              <div class="event__data">07 - 08 октября 2023 г.</div>
+              <div class="event__description">
+                Проводится Международной ассоциацией социологинь-веганок.
+              </div>
+            </div>
+          </a>
+          <a href="page_event-critical.html" class="events__second">
+            <img
+              src="img/events_img2.png"
+              alt="poster2"
+              class="event__img event__img_shadow-left"
+              id="event-img1"
+            />
+            <div class="event-container">
+              <div class="event">
+                7-я конференция Европейской ассоциации Критических исследований
+                животных (EACAS)
+              </div>
+              <div class="event__data">24 - 25 июня 2021 г.</div>
+              <div class="event__description">
+                Kультурные исследования, гендерные и женские исследования,
+                критические расовые исследования и др.
+              </div>
+            </div>
+            <img
+              src="img/events_img2.png"
+              alt="poster2"
+              class="event__img event__img_shadow-left"
+              id="event-img2"
+            />
+          </a>
         </div>
-        <a href="individual-event1.html" class="events__first">
+        <a href="page_event-impression.html" class="events__third">
           <img
-            src="img/events_img1.png"
-            alt="poster1"
+            src="img/events_img3.png"
+            alt="poster3"
             class="event__img event__img_shadow-right"
           />
           <div class="event-container">
             <div class="event">
-              Онлайн конференция "Веганская интерсекциональность"
+              Postgraduate Animal Studies Symposium: Впечатления
             </div>
-            <div class="event__data">07 - 08 октября 2023 г.</div>
+            <div class="event__data">24 - 25 мая 2021 г.</div>
             <div class="event__description">
-              Проводится Международной ассоциацией социологинь-веганок.
+              Выступление исследовательниц со своими научными работами,
+              посвященными животным.
             </div>
           </div>
         </a>
-        <a href="individ-event2.html" class="events__second">
-          <img
-            src="img/events_img2.png"
-            alt="poster2"
-            class="event__img event__img_shadow-left"
-            id="event-img1"
-          />
-          <div class="event-container">
-            <div class="event">
-              7-я конференция Европейской ассоциации Критических исследований
-              животных (EACAS)
-            </div>
-            <div class="event__data">24 - 25 июня 2021 г.</div>
-            <div class="event__description">
-              Kультурные исследования, гендерные и женские исследования,
-              критические расовые исследования и др.
-            </div>
-          </div>
-          <img
-            src="img/events_img2.png"
-            alt="poster2"
-            class="event__img event__img_shadow-left"
-            id="event-img2"
-          />
-        </a>
       </div>
-      <a href="individ-event8.html" class="events__third">
-        <img
-          src="img/events_img3.png"
-          alt="poster3"
-          class="event__img event__img_shadow-right"
-        />
-        <div class="event-container">
-          <div class="event">
-            Postgraduate Animal Studies Symposium: Впечатления
-          </div>
-          <div class="event__data">24 - 25 мая 2021 г.</div>
-          <div class="event__description">
-            Выступление исследовательниц со своими научными работами,
-            посвященными животным.
-          </div>
-        </div>
-      </a>
-    </div>
-    <!--Здесь заканчивается раздел мероприятия. Добавила Дарья -->
+      <!--Здесь заканчивается раздел мероприятия. Добавила Дарья -->
 
-    <!--Здесь начинается раздел с видео. Добавила Дарья -->
-    <div class="video">
-      <div class="container-wrapper">
-        <div class="container-video">
-          <div class="video__title">Видео</div>
-          <form action="page_video.html">
-            <button class="btn btn_green" type="submit">Смотреть все</button>
-          </form>
-        </div>
-        <hr class="video__line" />
-        <div class="video-container">
-          <iframe
-            src="https://www.youtube.com/embed/gsr8nRNO3is"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <div class="video__subtitle">
-            Спесишизм, субъективность животных и веганство
-          </div>
-          <div class="video__description">
-            Лекция о спесишизме как о видовой дискриминации, философской
-            концепции субъективности животных, а также про веганство, почему это
-            единственная этичная система ценностей, основанная не только на
-            теории, но и на практике отказа от поддержки эксплуатации животных и
-            их потребления.
-          </div>
-        </div>
-        <hr class="video__line" />
-      </div>
-    </div>
-    <!--Здесь заканчивается раздел с видео. Добавила Дарья -->
-
-    <!--Здесь начинается раздел "Статьи". Добавила Екатерина -->
-    <section class="articles">
-      <div class="articles__border-box">
+      <!--Здесь начинается раздел с видео. Добавила Дарья -->
+      <div class="video">
         <div class="container-wrapper">
-          <div class="articles__top-line">
-            <div class="articles__title">
-              <h2 class="articles__h2">Статьи</h2>
-            </div>
-            <form
-              action="page_articles.html"
-              target="_blank"
-              class="link__articles-btn"
-            >
-              <button class="btn btn_white" type="submit">Смотреть все</button>
+          <div class="container-video">
+            <div class="video__title">Видео</div>
+            <form action="page_video.html">
+              <button class="btn btn_green" type="submit">Смотреть все</button>
             </form>
           </div>
+          <hr class="video__line" />
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/gsr8nRNO3is"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div class="video__subtitle">
+              Спесишизм, субъективность животных и веганство
+            </div>
+            <div class="video__description">
+              Лекция о спесишизме как о видовой дискриминации, философской
+              концепции субъективности животных, а также про веганство, почему
+              это единственная этичная система ценностей, основанная не только
+              на теории, но и на практике отказа от поддержки эксплуатации
+              животных и их потребления.
+            </div>
+          </div>
+          <hr class="video__line" />
         </div>
       </div>
+      <!--Здесь заканчивается раздел с видео. Добавила Дарья -->
 
-      <div class="articles__border-box">
-        <div class="container-wrapper">
-          <div class="articles__main-article">
-            <a
-              href="page_article-against.html"
-              target="_blank"
-              class="articles__link-read-article articles__link-main"
-            >
-              <div class="articles__main-pic-box">
-                <img
-                  src="img/articles_main-pic.jpg"
-                  alt="man with dog"
-                  class="articles__main-pic"
-                />
+      <!--Здесь начинается раздел "Статьи". Добавила Екатерина -->
+      <section class="articles">
+        <div class="articles__border-box">
+          <div class="container-wrapper">
+            <div class="articles__top-line">
+              <div class="articles__title">
+                <h2 class="articles__h2">Статьи</h2>
               </div>
-            </a>
-            <div class="articles__main-content">
+              <form
+                action="page_articles.html"
+                target="_blank"
+                class="link__articles-btn"
+              >
+                <button class="btn btn_white" type="submit">
+                  Смотреть все
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="articles__border-box">
+          <div class="container-wrapper">
+            <div class="articles__main-article">
               <a
                 href="page_article-against.html"
                 target="_blank"
                 class="articles__link-read-article articles__link-main"
               >
-                <p class="articles__title">
-                  Сопротивление спесишизму и расширение сообщества равных
-                </p>
-                <p class="articles__text-p">
-                  Исследователь поведения и сознания животных, а также
-                  веган-активист Марк Бекофф размышляет о необходимости
-                  сопротивления спесишизму и отказа от жестоких экспериментов
-                  над любыми животными
-                </p>
+                <div class="articles__main-pic-box">
+                  <img
+                    src="img/articles_main-pic.jpg"
+                    alt="man with dog"
+                    class="articles__main-pic"
+                  />
+                </div>
               </a>
-              <a
-                href="page_article-specisism.html"
-                target="_blank"
-                class="article__link-continue"
-                >Продолжить читать
-                <img src="img/icons/articles-arrow.svg" alt="arrow" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="articles__border-box">
-        <div class="container-wrapper">
-          <div class="article__card-box">
-            <div class="articles__card-list">
-              <div class="articles__card">
+              <div class="articles__main-content">
                 <a
-                  href="page_article-critical.html"
+                  href="page_article-against.html"
                   target="_blank"
-                  class="articles__link-read-article articles__link-individual-art"
+                  class="articles__link-read-article articles__link-main"
                 >
-                  <div class="articles__pic-box">
-                    <img
-                      src="img/articles_pic1.png"
-                      alt="cover of book 'critical terms for animal studies'"
-                      class="articles__pic"
-                    />
-                  </div>
-                  <div class="articles__card-description">
-                    <h4 class="article__card-title">
-                      Критические термины для исследований животных. Вступление
-                    </h4>
-                    <p class="article__card-text-p">
-                      Исследовательница Лори Груэн об истории,
-                      интерсекциональности и активизме исследований животных
-                    </p>
-                  </div>
+                  <p class="articles__title">
+                    Сопротивление спесишизму и расширение сообщества равных
+                  </p>
+                  <p class="articles__text-p">
+                    Исследователь поведения и сознания животных, а также
+                    веган-активист Марк Бекофф размышляет о необходимости
+                    сопротивления спесишизму и отказа от жестоких экспериментов
+                    над любыми животными
+                  </p>
                 </a>
-              </div>
-
-              <div class="articles__card">
-                <a
-                  href="page_article-animals.html"
-                  target="_blank"
-                  class="articles__link-read-article articles__link-individual-art"
-                >
-                  <div class="articles__pic-box">
-                    <img
-                      src="img/articles_pic2.png"
-                      alt="picture-insects"
-                      class="articles__pic"
-                    />
-                  </div>
-                  <div class="articles__card-description">
-                    <h4 class="article__card-title">
-                      Животные, аномалии и неорганические Другие
-                    </h4>
-                    <p class="article__card-text-p">
-                      Философиня-постгуманистка Рози Брайдотти размышляет о
-                      нечеловеческих философиях, животных как вечных Других и
-                      этических концепциях становления животным
-                    </p>
-                  </div>
-                </a>
-              </div>
-
-              <div class="articles__card">
                 <a
                   href="page_article-specisism.html"
                   target="_blank"
-                  class="articles__link-read-article articles__link-individual-art"
-                >
-                  <div class="articles__pic-box">
-                    <img
-                      src="img/articles_pic3.png"
-                      alt="picture"
-                      class="articles__pic"
-                    />
-                  </div>
-                  <div class="articles__card-description">
-                    <h4 class="article__card-title">
-                      Спесишизм и права животных
-                    </h4>
-                    <p class="article__card-text-p">
-                      О спесишизме как об одной из самых прочных форм
-                      дискриминации и угнетения нечеловеческих животных, а также
-                      о различных подходах к правам всех животных
-                    </p>
-                  </div>
+                  class="article__link-continue"
+                  >Продолжить читать
+                  <img src="img/icons/articles-arrow.svg" alt="arrow" />
                 </a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="articles__border-box"></div>
-    </section>
-  </main>
-    <!--Здесь заканчивается раздел "Статьи". Добавила Екатерина -->
+
+        <div class="articles__border-box">
+          <div class="container-wrapper">
+            <div class="article__card-box">
+              <div class="articles__card-list">
+                <div class="articles__card">
+                  <a
+                    href="page_article-critical.html"
+                    target="_blank"
+                    class="articles__link-read-article articles__link-individual-art"
+                  >
+                    <div class="articles__pic-box">
+                      <img
+                        src="img/articles_pic1.png"
+                        alt="cover of book 'critical terms for animal studies'"
+                        class="articles__pic"
+                      />
+                    </div>
+                    <div class="articles__card-description">
+                      <h4 class="article__card-title">
+                        Критические термины для исследований животных.
+                        Вступление
+                      </h4>
+                      <p class="article__card-text-p">
+                        Исследовательница Лори Груэн об истории,
+                        интерсекциональности и активизме исследований животных
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="articles__card">
+                  <a
+                    href="page_article-animals.html"
+                    target="_blank"
+                    class="articles__link-read-article articles__link-individual-art"
+                  >
+                    <div class="articles__pic-box">
+                      <img
+                        src="img/articles_pic2.png"
+                        alt="picture-insects"
+                        class="articles__pic"
+                      />
+                    </div>
+                    <div class="articles__card-description">
+                      <h4 class="article__card-title">
+                        Животные, аномалии и неорганические Другие
+                      </h4>
+                      <p class="article__card-text-p">
+                        Философиня-постгуманистка Рози Брайдотти размышляет о
+                        нечеловеческих философиях, животных как вечных Других и
+                        этических концепциях становления животным
+                      </p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="articles__card">
+                  <a
+                    href="page_article-specisism.html"
+                    target="_blank"
+                    class="articles__link-read-article articles__link-individual-art"
+                  >
+                    <div class="articles__pic-box">
+                      <img
+                        src="img/articles_pic3.png"
+                        alt="picture"
+                        class="articles__pic"
+                      />
+                    </div>
+                    <div class="articles__card-description">
+                      <h4 class="article__card-title">
+                        Спесишизм и права животных
+                      </h4>
+                      <p class="article__card-text-p">
+                        О спесишизме как об одной из самых прочных форм
+                        дискриминации и угнетения нечеловеческих животных, а
+                        также о различных подходах к правам всех животных
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="articles__border-box"></div>
+      </section>
+      <!--Здесь заканчивается раздел "Статьи". Добавила Екатерина -->
+    </main>
 
     <!--Здесь начинается футер. Добавила Дарья -->
     <footer class="footer">
@@ -447,7 +450,7 @@
             <div class="copyright">ⓒ 2023. All rights reserved.</div>
             <div class="footer__menu">
               <a href="page_about.html" class="footer__link-menu">О нас</a>
-              <a href="page_article.html" class="footer__link-menu">Статьи</a>
+              <a href="page_articles.html" class="footer__link-menu">Статьи</a>
               <a href="page_video.html" class="footer__link-menu">Видео</a>
               <a href="page_events.html" class="footer__link-menu"
                 >Мероприятия</a

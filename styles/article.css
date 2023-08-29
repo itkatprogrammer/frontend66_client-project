@@ -6,7 +6,8 @@
 
 .articles__main {
   margin: 0 auto;
-  padding: 100px 130px;
+  max-width: 1180px;
+  padding: 0px 130px;
 }
 @media (max-width: 300px) {
   .articles__main {
@@ -29,6 +30,43 @@
 @media (max-width: 480px) {
   .articles__main {
     padding: 30px 50px;
+  }
+}
+
+.articles__title-h3 {
+  text-align: center;
+  margin-top: 1px;
+  background-color: #F1F1F1;
+  margin-bottom: 100px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #2D2D2D;
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .articles__title-h3 {
+    font-size: 55px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
   }
 }
 

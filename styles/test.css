@@ -26,13 +26,13 @@
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .header__main {
-    font-size: 32px;
+    font-size: 12px;
     text-align: center;
   }
 }
 @media (max-width: 480px) {
   .header__main {
-    font-size: 32px;
+    font-size: 16px;
     text-align: center;
   }
 }
@@ -64,13 +64,13 @@
 @media (min-width: 481px) and (max-width: 767px) {
   .events__title-h3 {
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 480px) {
   .events__title-h3 {
     font-size: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -435,4 +435,4 @@
     border-radius: 20px;
     text-align: center;
   }
-}/*# sourceMappingURL=page_events.css.map */
+}/*# sourceMappingURL=test.css.map */

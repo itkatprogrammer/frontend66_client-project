@@ -10,6 +10,8 @@
 .top-line__menu .menu_link:hover {
     background-color: rgba(120, 189, 148, 0.34);
     transition: all 0.6s ease;
+    border-top: 1px solid #505050;
+    border-bottom: 1px solid #505050;
 }
 
 .body {
@@ -518,6 +520,7 @@
         display: flex;
         gap: 20px;
         cursor: pointer;
+        
 
         .top-icons {
             height: 24px;
@@ -528,6 +531,7 @@
         }
     }
 }
+
 
 a {
     text-decoration: none;

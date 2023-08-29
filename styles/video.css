@@ -59,8 +59,7 @@
   letter-spacing: 0px;
   color: #505050;
   text-align: center;
-  max-width: 1180px;
-  margin: 50px auto;
+  margin-top: 50px;
 }
 
 .container-video {
@@ -71,7 +70,8 @@
 
 iframe {
   width: 1180px;
-  height: 562px;
+  height: 680px;
+  padding: 100px;
   border: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -101,4 +101,4 @@ iframe {
     height: 113px;
     padding: 20px;
   }
-}/*# sourceMappingURL=page_video.css.map */
+}/*# sourceMappingURL=video.css.map */
