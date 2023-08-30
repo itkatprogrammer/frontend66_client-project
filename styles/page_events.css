@@ -291,7 +291,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
-  margin: auto;
+  margin: 60px auto;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -301,6 +301,7 @@
     max-height: 95vh;
     overflow-x: hidden;
     overflow-y: auto;
+    margin: 50px auto;
   }
 }
 @media (min-width: 600px) and (max-width: 768px) {
@@ -310,12 +311,14 @@
     max-height: 95vh;
     overflow-x: hidden;
     overflow-y: auto;
+    margin: 40px auto;
   }
 }
 @media screen and (max-width: 600px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    margin: 30px auto;
   }
 }
 .wrapper__col {
