@@ -7,7 +7,7 @@
 .articles__main {
   margin: 0 auto;
   max-width: 1180px;
-  padding: 0px 130px;
+  padding: 60px 100px;
 }
 @media (max-width: 300px) {
   .articles__main {
@@ -84,18 +84,19 @@
     grid-template-columns: repeat(1, 1fr);
     margin: 0px auto;
     max-width: 200px;
+    grid-gap: 30px 30px;
   }
 }
 @media (max-width: 480px) {
   .articles__container {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 45px 65px;
+    grid-gap: 40px 40px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
   .articles__container {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 45px 65px;
+    grid-gap: 45px 45px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -116,26 +117,59 @@
 }
 .articles__container .atricles__image {
   display: flex;
-  max-width: 380px;
-  max-height: 450px;
+  justify-content: center;
+  max-width: 369px;
+  max-height: 413px;
+  min-height: 412px;
   margin-bottom: 15px;
   box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.5);
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 480px) {
   .articles__container .atricles__image {
-    height: 300px;
-    min-width: 191px;
+    max-width: 252px;
+    min-width: 187px;
+    max-height: 341px;
+    min-height: 354px;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 549px) {
   .articles__container .atricles__image {
-    height: 350px;
+    max-width: 347px;
+    min-width: 187px;
+    max-height: 293px;
+    min-height: 277px;
+  }
+}
+@media (min-width: 550px) and (max-width: 663px) {
+  .articles__container .atricles__image {
+    max-width: 366px;
+    min-width: 190px;
+    max-height: 336px;
+    min-height: 335px;
+  }
+}
+@media (min-width: 664px) and (max-width: 778px) {
+  .articles__container .atricles__image {
+    max-width: 366px;
+    min-width: 190px;
+    max-height: 368px;
+    min-height: 374px;
+  }
+}
+@media (min-width: 779px) and (max-width: 991px) {
+  .articles__container .atricles__image {
+    max-width: 316px;
+    min-width: 198px;
+    max-height: 390px;
+    min-height: 386px;
   }
 }
 @media (min-width: 992px) and (max-width: 1460px) {
   .articles__container .atricles__image {
-    height: 400px;
-    min-width: 261px;
+    max-width: 461px;
+    min-width: 260px;
+    max-height: 418px;
+    min-height: 416px;
   }
 }
 .articles__container .atricles__image .news-pic {
