@@ -43,12 +43,7 @@
   display: flex;
   justify-content: center;
   margin-top: 40px;
-<<<<<<< HEAD
   width: 100%;
-=======
-  min-width: 197px;
-  max-width: 550px;
->>>>>>> 6310f51b61df59870b955ebc7cc1b785c2d08f0a
   margin: 0 auto;
   margin-bottom: 30px;
 }
